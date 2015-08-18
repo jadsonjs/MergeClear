@@ -139,7 +139,7 @@ public class GithubMiner extends Miner {
 					
 					// Tive que adicionar isso para pegar os PRs apenas de um link, pois os PRs pertencem apenas a um repositorio
 					IRepositoryIdProvider repo_id = RepositoryId.createFromUrl(ConfigUtils.getConnection(PluginConstants.SOURCE_SYSTEM_URL));
- 					GitHubClient githubClientManager2 = new GitHubClient().setOAuth2Token("28ca0d6f2e8c3b1e87447c13c4a2d93d40fcfd47");
+ 					GitHubClient githubClientManager2 = new GitHubClient().setOAuth2Token("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");  // TODO not put this hardcore
 					RepositoryService githubRepositoryService2 = new RepositoryService();
 					PullRequestService githubPullRequestService2 = new PullRequestService(githubClientManager2);
 					Repository repo = githubRepositoryService2.getRepository(repo_id);
