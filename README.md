@@ -50,7 +50,17 @@ Right Click in the Project -> Run as -> Eclipse Application
 
 ##### Contribution guidelines
 
-Writing tests
+The following contributions can be made:
+
+- Improve the algorithm of task dependence detections
+- Create a wizard screen to edit configuration files
+- Implement the merge and test phases of the approach 
+- Test the GIT and GITHub integration
+- Run this tool to analyze new system and confirm our data
+- Improve the documentation
+- Write new automatic tests for the tool
+
+##### Writing tests
 
 White your tests under the *src_test* source folder. Add your test to the br.ufrn.spl.ev.TestAll.java suite.
 
