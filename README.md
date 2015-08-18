@@ -1,7 +1,7 @@
 # MergeClear
 
 ##### About:
-MergeClear is a academic tool to deal with the problem of merge system that were cloned. This tool was part of a doctoral and master degree research.
+MergeClear is an academic tool to deal with the problem of merge system that were cloned. This tool was part of a doctoral and master degree research.
 
 ##### Version: 
 
