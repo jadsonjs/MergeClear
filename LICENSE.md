@@ -12,9 +12,9 @@ This program is distributed without any warranty.
 
 You may use this code, or knowledge contained in it to perform research, academic works, classes or private studies, since the copyright notices are not removed.
 
-It is forbidden to develop or improve existing code and not share it with the original authors.
+It is forbidden to develop or improve existing code and not share it with the original authors. Any improvements that may be made must necessarily be submitted to the original repository tool.
 
-You may use this code for commercial use since any tool or commercial application that may arise from this tool, or the knowledge contained in it, must have its source code available with no cost to the original authors.
+You may use this code for commercial intention since any tool or commercial application that may arise from this tool, or the knowledge contained in it, must keep the copyright notices and have its source code available with no cost to the original authors.
 
 #####Source code quality
 
@@ -32,7 +32,7 @@ Revised and / or new versions of this license may be published to correct situat
 
 
 
-
+<br/><br/><br/><br/><br/> 
 
 
 
@@ -49,13 +49,13 @@ Esse código fonte é distribuído sem nenhuma garantia
 
 É permitido usar deste código, ou do conhecimento contido nele para realizar trabalhos acadêmicos, pesquisas, aulas ou estudos privados, desde que a autoria do código não seja removida.
 
-É proibido desenvolver ou melhorar o código existente e não compartilhar as melhorias com os autores originais. 
+É proibido desenvolver ou melhorar o código existente e não compartilhar essas melhorias com os autores originais. Qualquer melhoria que venha a ser realizada deve ser obrigatoriamente submetida para o repositório original da ferramenta.
 
-É permitido usar este código para uso comercial desde que qualquer ferramenta ou aplicação comercial que venha a surgir a partir dessa ferramenta, ou do conhecimento contido nela, deve ter seu código fonte disponibilizado sem custos para os autores originais.
+Também é permitido usar este código para fins comerciais desde que a autoria do código não seja removida e qualquer ferramenta ou aplicação comercial que venha a surgir a partir dessa ferramenta, ou do conhecimento contido nela, deve ter seu código fonte disponibilizado sem custos para os autores originais.
 
 #####Qualidade do Código
 
-Comentar todo o código adicionado ou modificado com comentários que indiquem o que aquele trecho de código se propõem a fazer. 
+Comentar todo o código adicionado ou modificado com comentários que indiquem de forma clara e precisa o que aquele trecho de código se propõem a fazer. 
 
 Usar boas práticas de orientação a objetos. Ao se criar uma classe que realize uma tarefa específica de uma determinada tecnologia ou sistema, criar uma interface com o comportamento padrão a ser implementado. Essa interface permitirá que a ferramenta possa ser estendida futuramente para novas tecnologias ou sistemas.
 
