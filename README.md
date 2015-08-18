@@ -7,7 +7,7 @@ MergeClear is a academic tool to deal with the problem of merge system that were
 
 1.0.0-SNAPSHOT (not recommended for use in production)
 
-####Authors:
+##### Authors:
 
     Jadson Santos
     Uira Kulesza
@@ -15,7 +15,7 @@ MergeClear is a academic tool to deal with the problem of merge system that were
     Gleydson Lima
     Fladson Gomes
 
-#####How do I get set up?
+##### How do I get set up?
 
 Just chekout the project for the eclipse. You will need to install the EGit plugin in your eclipse first.
 
@@ -23,26 +23,26 @@ If you find some compile erros, please make sure the all pluing necessary depend
 
 See src/br-ufrn-spl-ev/DOC/Ev Tutorial.pdf file for more details about the tool configuration.
 
-######Configuration
+##### Configuration
 
    To Run the MergeClear you will need to configure two files:
 
     src/br/ufrn/slp/ev/config.properties
     src/br/ufrn/slp/ev/connections.properties
 
-###### Dependencies
+##### Dependencies
 
    JGit, SVNKit, Xstream, Eclipse JDT
 
-###### Database configuration
+##### Database configuration
 
 Not necessary
 
-###### How to run tests
+##### How to run tests
 
 Run the br.ufrn.spl.ev.TestAll.java class.
 
-###### Deployment instructions
+##### Deployment instructions
 
 Right Click in the Project -> Run as -> Eclipse Application
 
