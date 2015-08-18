@@ -5,7 +5,7 @@ MergeClear is an academic tool to deal with the problem of merge system that wer
 
 ##### Version: 
 
-1.0.0-SNAPSHOT (not recommended for use in production)
+1.0.0 (not mature for commercial use)
 
 ##### Authors:
 
