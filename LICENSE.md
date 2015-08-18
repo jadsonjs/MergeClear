@@ -7,9 +7,13 @@
 
 #####Permissões do Código Fonte
 
-É permitido usar deste código, ou do conhecimento contido nele para realizar trabalhos acadêmicos.
+Esse código fonte é distribuído sem nenhuma garantia
 
-É proibido desenvolver ou melhorar o código existente e não compartilha-lo com os autores originais.
+É permitido usar deste código, ou do conhecimento contido nele para realizar trabalhos acadêmicos, pesquisas, aulas ou estudos privados, desde que a autoria do código não seja removida.
+
+É proibido desenvolver ou melhorar o código existente e não compartilhar as melhorias com os autores originais. 
+
+É permitido usar este código para uso comercial desde que qualquer ferramenta ou aplicação comercial que venha a surgir a partir dessa ferramenta, ou do conhecimento contido nela, deve ter seu código fonte disponibilizado sem custos para os autores originais.
 
 #####Qualidade do Código
 
@@ -35,9 +39,13 @@ It is allowed to all copy and distribute this license, but changing in it is not
 
 ##### Source Code Permission
 
-You may use this code, or knowledge contained in it to perform academic work.
+This program is distributed without any warranty.
+
+You may use this code, or knowledge contained in it to perform research, academic works, classes or private studies, since the copyright notices are not removed.
 
 It is forbidden to develop or improve existing code and not share it with the original authors.
+
+You may use this code for commercial use since any tool or commercial application that may arise from this tool, or the knowledge contained in it, must have its source code available with no cost to the original authors.
 
 #####Source code quality
 
