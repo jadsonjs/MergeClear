@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<variabilities>
+    
+	<description>SPL Variability Mock Example</description>
+	<system>mock</system>
+
+	<variability>
+		
+	    <id>var-mock-01</id>
+		<description>Variability Example</description>
+		<module>mock-module</module>
+		<type>strategy</type>
+
+		<variationPoint>br.ufrn.example.G</variationPoint>
+		
+		<variants>
+			<description>Concrete implementation 1</description>
+			<value>br.ufrn.example.G1</value>
+		</variants>
+
+	</variability>
+	
+	<variability>
+		
+	    <id>var-mock-02</id>
+		<description>Variability Conditional Exec</description>
+		<module>mock-module</module>
+		<type>condExecution</type>
+
+		<variationPoint>br.ufrn.param.ParamMock#INCLUDE_FEATURE_01</variationPoint>
+		
+		<variants>
+			<description>Include Feature</description>
+			<value>true</value>
+		</variants>
+		
+		<variants>
+			<description>Dot not Include Feature</description>
+			<value>false</value>
+		</variants>
+
+	</variability>
+	
+</variabilities>

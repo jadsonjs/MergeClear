@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="menu:org.eclipse.ui.main.menu">
+         <menu
+               id="br.ufrn.spl.ev.menuSPLEvolution"
+               label="Evolution Analysis">
+            <command
+                  commandId="br.ufrn.spl.ev.commandExecuteEvolutionAnalysis"
+                  label="Start Analysis"
+                  style="push">
+            </command>
+            <command
+                  commandId="br.ufrn.spl.ev.commandConnectionsSettings"
+                  label="Connection Settings"
+                  style="push">
+            </command>
+            <command
+                  commandId="br.ufrn.spl.ev.commandToolSettings"
+                  label="Tool Settings"
+                  style="push">
+            </command>
+         </menu>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            id="br.ufrn.spl.ev.commandExecuteEvolutionAnalysis"
+            name="commandEvolutionAnalysis">
+      </command>
+      <command
+            id="br.ufrn.spl.ev.commandConnectionsSettings"
+            name="commandConnectionsSettings">
+      </command>
+      <command
+            id="br.ufrn.spl.ev.commandToolSettings"
+            name="commandToolSettings">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="br.ufrn.spl.ev.gui.handlers.ExecuteEvolutionEngineHandle"
+            commandId="br.ufrn.spl.ev.commandExecuteEvolutionAnalysis">
+      </handler>
+      <handler
+            class="br.ufrn.spl.ev.gui.handlers.ConnectionsSettingsHandle"
+            commandId="br.ufrn.spl.ev.commandConnectionsSettings">
+      </handler>
+      <handler
+            class="br.ufrn.spl.ev.gui.handlers.ToolSettingsHandle"
+            commandId="br.ufrn.spl.ev.commandToolSettings">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            class="br.ufrn.spl.ev.gui.perspectives.EvolutionPerspectiveFactory"
+            icon="DOCS/EV - Icon.jpg"
+            id="br.ufrn.spl.ev.evolutionperspective"
+            name="EV">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="br.ufrn.spl.ev.evolutionperspective">
+         <view
+               id="br.ufrn.spl.ev.gui.views.ViewEvolutionTree"
+               minimized="false"
+               relationship="top">
+         </view>
+         <view
+               id="org.eclipse.jdt.ui.PackageExplorer"
+               minimized="false"
+               relationship="left">
+         </view>
+      </perspectiveExtension>
+   </extension>
+
+</plugin>

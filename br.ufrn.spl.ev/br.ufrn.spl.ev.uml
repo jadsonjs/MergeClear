@@ -1,0 +1,1316 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:JavaProfile_1="http:///_aZXakH6MEdmbwasWWc4yvw.profile.uml2" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///_aZXakH6MEdmbwasWWc4yvw.profile.uml2 platform:/plugin/com.omondo.uml.core/profiles/Java.profile.uml#_aZhLlH6MEdmbwasWWc4yvw">
+  <uml:Model xmi:id="_fndqwIJAEeOSnasWRemx6Q" name="br.ufrn.spl.ev">
+    <packageImport xmi:id="_fqNcwIJAEeOSnasWRemx6Q">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_f7s1YIJAEeOSnasWRemx6Q" name="br">
+      <packagedElement xmi:type="uml:Package" xmi:id="_f7tccIJAEeOSnasWRemx6Q" name="ufrn">
+        <packagedElement xmi:type="uml:Package" xmi:id="_f7tccYJAEeOSnasWRemx6Q" name="spl">
+          <packagedElement xmi:type="uml:Package" xmi:id="_f7uDgIJAEeOSnasWRemx6Q" name="ev">
+            <packagedElement xmi:type="uml:Package" xmi:id="_f7uDgYJAEeOSnasWRemx6Q" name="engines">
+              <packagedElement xmi:type="uml:Package" xmi:id="_f7uqkIJAEeOSnasWRemx6Q" name="conflicts">
+                <packagedElement xmi:type="uml:Package" xmi:id="_f7uqkYJAEeOSnasWRemx6Q" name="indirect">
+                  <eAnnotations xmi:id="_iNjjQIJAEeOSnasWRemx6Q" source="br.ufrn.spl.ev/src/br/ufrn/spl/ev/engines/conflicts/indirect/br.ufrn.spl.ev.engines.conflicts.indirectClassDiagram.ucd" references="_iNhuEIJAEeOSnasWRemx6Q _iTa6sIJAEeOSnasWRemx6Q _iWA7sIJAEeOSnasWRemx6Q _iWCJ0IJAEeOSnasWRemx6Q _iWCw4IJAEeOSnasWRemx6Q _iaek8IJAEeOSnasWRemx6Q"/>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_iNhuEIJAEeOSnasWRemx6Q" name="IndirectConflictsDetectionStrategyFactory">
+                    <eAnnotations xmi:id="_iNjjQYJAEeOSnasWRemx6Q" source="br.ufrn.spl.ev/src/br/ufrn/spl/ev/engines/conflicts/indirect/br.ufrn.spl.ev.engines.conflicts.indirectClassDiagram.ucd"/>
+                    <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_iTa6sIJAEeOSnasWRemx6Q" name="INDIRECT_ANALYSIS_TYPE">
+                      <eAnnotations xmi:id="_iTbhwIJAEeOSnasWRemx6Q" source="br.ufrn.spl.ev/src/br/ufrn/spl/ev/engines/conflicts/indirect/br.ufrn.spl.ev.engines.conflicts.indirectClassDiagram.ucd"/>
+                      <ownedLiteral xmi:id="_iVn6IIJAEeOSnasWRemx6Q" name="WALA"/>
+                      <ownedLiteral xmi:id="_iVn6IYJAEeOSnasWRemx6Q" name="JDT"/>
+                    </nestedClassifier>
+                    <ownedOperation xmi:id="_iS7LcIJAEeOSnasWRemx6Q" name="getIndirectConflictsStrategy" visibility="public" isStatic="true" concurrency="concurrent">
+                      <ownedParameter xmi:id="_iTMRMIJAEeOSnasWRemx6Q" name="analysisType">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iTOtcIJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_iWA7sIJAEeOSnasWRemx6Q" name="IndirectConflictsDetectionStrategy" isAbstract="true">
+                    <eAnnotations xmi:id="_iWBiwIJAEeOSnasWRemx6Q" source="br.ufrn.spl.ev/src/br/ufrn/spl/ev/engines/conflicts/indirect/br.ufrn.spl.ev.engines.conflicts.indirectClassDiagram.ucd"/>
+                    <ownedAttribute xmi:id="_iWgq8IJAEeOSnasWRemx6Q" name="javaSourceProject" visibility="protected" type="_iWmKgIJAEeOSnasWRemx6Q">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_iWhSAIJAEeOSnasWRemx6Q">
+                        <value xsi:nil="true"/>
+                      </defaultValue>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_iWmxkoJAEeOSnasWRemx6Q" name="javaTargetProject" visibility="protected" type="_iWmKgIJAEeOSnasWRemx6Q">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_iWnYoIJAEeOSnasWRemx6Q">
+                        <value xsi:nil="true"/>
+                      </defaultValue>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_iWnYoYJAEeOSnasWRemx6Q" name="changeLogHistoryTarget" visibility="protected" type="_iWpN0IJAEeOSnasWRemx6Q" association="_iYiEMIJAEeOSnasWRemx6Q">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_iWn_sIJAEeOSnasWRemx6Q">
+                        <value xsi:nil="true"/>
+                      </defaultValue>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_iWp04oJAEeOSnasWRemx6Q" name="depthAnalysisLevel" visibility="protected">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_iWqb8IJAEeOSnasWRemx6Q" value="1"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_iWqb8YJAEeOSnasWRemx6Q" name="changeLogHistorySource" visibility="protected" type="_iWpN0IJAEeOSnasWRemx6Q" association="_iYg2EIJAEeOSnasWRemx6Q">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_iWrDAIJAEeOSnasWRemx6Q">
+                        <value xsi:nil="true"/>
+                      </defaultValue>
+                    </ownedAttribute>
+                    <ownedOperation xmi:id="_iWrqEIJAEeOSnasWRemx6Q" name="getDependenceOfAsset" visibility="protected" isAbstract="true" concurrency="concurrent" raisedException="_iW8v0IJAEeOSnasWRemx6Q">
+                      <ownedParameter xmi:id="_isYNQIJAEeOSnasWRemx6Q" name="javaProject" type="_iWmKgIJAEeOSnasWRemx6Q">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_isY0UIJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_isY0UYJAEeOSnasWRemx6Q" name="assetChangeLog" type="_iWs4MIJAEeOSnasWRemx6Q">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_isY0UoJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_iW9W4IJAEeOSnasWRemx6Q" name="performAnalysis" visibility="private" isLeaf="true" concurrency="concurrent" raisedException="_iW8v0IJAEeOSnasWRemx6Q"/>
+                    <ownedOperation xmi:id="_iW998IJAEeOSnasWRemx6Q" name="loadData" visibility="protected" isAbstract="true" concurrency="concurrent" raisedException="_iW8v0IJAEeOSnasWRemx6Q">
+                      <ownedParameter xmi:id="_iskagIJAEeOSnasWRemx6Q" name="changeLogHistorySource" type="_iWpN0IJAEeOSnasWRemx6Q">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iskagYJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_islBkIJAEeOSnasWRemx6Q" name="changeLogHistoryTarget" type="_iWpN0IJAEeOSnasWRemx6Q">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_islBkYJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_islooIJAEeOSnasWRemx6Q" name="connectorSource" type="_iXEroIJAEeOSnasWRemx6Q">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_islooYJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_ismPsIJAEeOSnasWRemx6Q" name="connectorTarget" type="_iXEroIJAEeOSnasWRemx6Q">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ismPsYJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_iXGg0IJAEeOSnasWRemx6Q" name="containsAsset" visibility="private" isLeaf="true" concurrency="concurrent" raisedException="_iW8v0IJAEeOSnasWRemx6Q">
+                      <ownedParameter xmi:id="_is2HUIJAEeOSnasWRemx6Q" name="assetIndirectDependece" type="_iWs4MIJAEeOSnasWRemx6Q">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_is2uYIJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_is8N8IJAEeOSnasWRemx6Q" name="tableOfClasses">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_itCUkIJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_itH0IIJAEeOSnasWRemx6Q" name="tableOfMethods">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_itN6wIJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_itTaUIJAEeOSnasWRemx6Q" name="tableOfFields">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_itZg8IJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_itaIAIJAEeOSnasWRemx6Q" type="_iWs4MIJAEeOSnasWRemx6Q" direction="return">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_itavEIJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_iXzrcIJAEeOSnasWRemx6Q" name="permformIndirectDependenceAnalysis" visibility="private" isLeaf="true" concurrency="concurrent" raisedException="_iW8v0IJAEeOSnasWRemx6Q">
+                      <ownedParameter xmi:id="_isnd0IJAEeOSnasWRemx6Q" name="assetChangeLogSource" type="_iWs4MIJAEeOSnasWRemx6Q">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_isoE4IJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_isuLgIJAEeOSnasWRemx6Q" name="dependences">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iszrEIJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_is0SIIJAEeOSnasWRemx6Q" name="actualLevel">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_is05MIJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_is05MYJAEeOSnasWRemx6Q" name="depthLevel">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_is1gQIJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_iYDjEIJAEeOSnasWRemx6Q" name="checkIndirectConflicts" visibility="public" isLeaf="true" concurrency="concurrent" raisedException="_iW8v0IJAEeOSnasWRemx6Q">
+                      <ownedParameter xmi:id="_isgwIIJAEeOSnasWRemx6Q" name="changeLogHistorySource" type="_iWpN0IJAEeOSnasWRemx6Q">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_isgwIYJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_ishXMIJAEeOSnasWRemx6Q" name="changeLogHistoryTarget" type="_iWpN0IJAEeOSnasWRemx6Q">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ishXMYJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_ish-QIJAEeOSnasWRemx6Q" name="sourceConnector" type="_iXEroIJAEeOSnasWRemx6Q">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ish-QYJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_isilUIJAEeOSnasWRemx6Q" name="targetConnector" type="_iXEroIJAEeOSnasWRemx6Q">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_isilUYJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_isjMYIJAEeOSnasWRemx6Q" name="depthAnalysisLevel">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_isjMYYJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_iWCJ0IJAEeOSnasWRemx6Q" name="IndirectConflictsDetectionWALAStrategy">
+                    <eAnnotations xmi:id="_iWCJ0YJAEeOSnasWRemx6Q" source="br.ufrn.spl.ev/src/br/ufrn/spl/ev/engines/conflicts/indirect/br.ufrn.spl.ev.engines.conflicts.indirectClassDiagram.ucd"/>
+                    <generalization xmi:id="_iZFd0IJAEeOSnasWRemx6Q" general="_iWA7sIJAEeOSnasWRemx6Q"/>
+                    <ownedOperation xmi:id="_iZK9YIJAEeOSnasWRemx6Q" name="getDependenceOfAsset" visibility="protected" concurrency="concurrent">
+                      <ownedParameter xmi:id="_iZNZoIJAEeOSnasWRemx6Q" name="javaProject" type="_iWmKgIJAEeOSnasWRemx6Q">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iZOAsIJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_iZP14IJAEeOSnasWRemx6Q" name="assetChangeLog" type="_iWs4MIJAEeOSnasWRemx6Q">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iZQc8IJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_iZUHUIJAEeOSnasWRemx6Q" name="loadData" visibility="protected" concurrency="concurrent">
+                      <ownedParameter xmi:id="_iZWjkIJAEeOSnasWRemx6Q" name="changeLogHistorySource2" type="_iWpN0IJAEeOSnasWRemx6Q">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iZXKoIJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_iZXKoYJAEeOSnasWRemx6Q" name="changeLogHistoryTarget" type="_iWpN0IJAEeOSnasWRemx6Q">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iZXxsIJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_iZZm4IJAEeOSnasWRemx6Q" name="sourceConnector" type="_iXEroIJAEeOSnasWRemx6Q">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iZaN8IJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_iZa1AIJAEeOSnasWRemx6Q" name="targetConnector" type="_iXEroIJAEeOSnasWRemx6Q">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iZa1AYJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_iWCw4IJAEeOSnasWRemx6Q" name="IndirectConflictsDetectionMockStrategy">
+                    <eAnnotations xmi:id="_iWCw4YJAEeOSnasWRemx6Q" source="br.ufrn.spl.ev/src/br/ufrn/spl/ev/engines/conflicts/indirect/br.ufrn.spl.ev.engines.conflicts.indirectClassDiagram.ucd"/>
+                    <generalization xmi:id="_iZqsoIJAEeOSnasWRemx6Q" general="_iWA7sIJAEeOSnasWRemx6Q"/>
+                    <ownedOperation xmi:id="_iZyocIJAEeOSnasWRemx6Q" name="getDependenceOfAsset" visibility="protected" concurrency="concurrent">
+                      <ownedParameter xmi:id="_iZ2S0IJAEeOSnasWRemx6Q" name="javaProject" type="_iWmKgIJAEeOSnasWRemx6Q">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iZ2S0YJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_iZ5WIIJAEeOSnasWRemx6Q" name="assetChangeLog" type="_iWs4MIJAEeOSnasWRemx6Q">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iZ59MIJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_iZ_cwIJAEeOSnasWRemx6Q" name="loadData" visibility="protected" concurrency="concurrent">
+                      <ownedParameter xmi:id="_iaCgEIJAEeOSnasWRemx6Q" name="changeLogHistorySource" type="_iWpN0IJAEeOSnasWRemx6Q">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iaDHIIJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_iaDuMIJAEeOSnasWRemx6Q" name="changeLogHistoryTarget" type="_iWpN0IJAEeOSnasWRemx6Q">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iaDuMYJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_iaHYkIJAEeOSnasWRemx6Q" name="sourceConnector" type="_iXEroIJAEeOSnasWRemx6Q">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iaHYkYJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_iaH_oIJAEeOSnasWRemx6Q" name="targetConnector" type="_iXEroIJAEeOSnasWRemx6Q">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iaH_oYJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Association" xmi:id="_iYg2EIJAEeOSnasWRemx6Q" memberEnd="_iWqb8YJAEeOSnasWRemx6Q _iYg2EYJAEeOSnasWRemx6Q">
+                    <ownedEnd xmi:id="_iYg2EYJAEeOSnasWRemx6Q" name="ownedEnd" type="_iWA7sIJAEeOSnasWRemx6Q" association="_iYg2EIJAEeOSnasWRemx6Q"/>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Association" xmi:id="_iYiEMIJAEeOSnasWRemx6Q" memberEnd="_iWnYoYJAEeOSnasWRemx6Q _iYiEMYJAEeOSnasWRemx6Q">
+                    <ownedEnd xmi:id="_iYiEMYJAEeOSnasWRemx6Q" name="ownedEnd" type="_iWA7sIJAEeOSnasWRemx6Q" association="_iYiEMIJAEeOSnasWRemx6Q"/>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_iaek8IJAEeOSnasWRemx6Q" name="IndirectConflictsDetectionJDTStrategy">
+                    <eAnnotations xmi:id="_iafMAIJAEeOSnasWRemx6Q" source="br.ufrn.spl.ev/src/br/ufrn/spl/ev/engines/conflicts/indirect/br.ufrn.spl.ev.engines.conflicts.indirectClassDiagram.ucd"/>
+                    <generalization xmi:id="_iarZQIJAEeOSnasWRemx6Q"/>
+                    <ownedOperation xmi:id="_ibIsQIJAEeOSnasWRemx6Q" name="loadData" visibility="protected" concurrency="concurrent">
+                      <ownedParameter xmi:id="_ibNkwIJAEeOSnasWRemx6Q" name="changeLogHistorySource">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ibR2MIJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_ibWHoIJAEeOSnasWRemx6Q" name="changeLogHistoryTarget">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ibaZEIJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_ibfRkIJAEeOSnasWRemx6Q" name="sourceConnector">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ibjjAIJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_ibn0cIJAEeOSnasWRemx6Q" name="targetConnector">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ibsF4IJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_ibwXUIJAEeOSnasWRemx6Q" name="generatedClassChangeLogSignature" visibility="private" concurrency="concurrent">
+                      <ownedParameter xmi:id="_ib0owIJAEeOSnasWRemx6Q" name="parent">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ib46MIJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_ib-ZwIJAEeOSnasWRemx6Q" name="getDependenceOfAsset" visibility="protected" concurrency="concurrent">
+                      <ownedParameter xmi:id="_icCrMIJAEeOSnasWRemx6Q" name="javaProject">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_icHjsIJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_icLOEIJAEeOSnasWRemx6Q" name="assetChangeLog">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_icPfgIJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_icYCYIJAEeOSnasWRemx6Q" name="findIJavaElementOnChangeLogHistoryOfTarget" visibility="private" concurrency="concurrent">
+                      <ownedParameter xmi:id="_iccT0IJAEeOSnasWRemx6Q" name="result">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_icglQIJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_ickPoIJAEeOSnasWRemx6Q" name="getJDTJavaElement" visibility="private" concurrency="concurrent">
+                      <ownedParameter xmi:id="_icn6AIJAEeOSnasWRemx6Q" name="javaProject">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_icsLcIJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_icv10IJAEeOSnasWRemx6Q" name="assetChangeLog">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ic0HQIJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                  </packagedElement>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Package" xmi:id="_mD2fYIJAEeOSnasWRemx6Q" name="direct">
+                  <eAnnotations xmi:id="_maAVkIJAEeOSnasWRemx6Q" source="br.ufrn.spl.ev/src/br/ufrn/spl/ev/engines/conflicts/direct/br.ufrn.spl.ev.engines.conflicts.directClassDiagram.ucd" references="_mZ_ugIJAEeOSnasWRemx6Q _maD_8IJAEeOSnasWRemx6Q _maalQIJAEeOSnasWRemx6Q"/>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_mZ_ugIJAEeOSnasWRemx6Q" name="DirectConflictsDetectionStrategyFactory">
+                    <eAnnotations xmi:id="_maAVkYJAEeOSnasWRemx6Q" source="br.ufrn.spl.ev/src/br/ufrn/spl/ev/engines/conflicts/direct/br.ufrn.spl.ev.engines.conflicts.directClassDiagram.ucd"/>
+                    <ownedOperation xmi:id="_maDY4IJAEeOSnasWRemx6Q" name="getDirectConflictsStrategy" visibility="public" isStatic="true" concurrency="concurrent">
+                      <ownedParameter xmi:id="_cXB_UIJBEeOSnasWRemx6Q" type="_maD_8IJAEeOSnasWRemx6Q" direction="return">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cXCmYIJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Interface" xmi:id="_maD_8IJAEeOSnasWRemx6Q" name="DirectConflictsDetectionStrategy">
+                    <eAnnotations xmi:id="_maEnAIJAEeOSnasWRemx6Q" source="br.ufrn.spl.ev/src/br/ufrn/spl/ev/engines/conflicts/direct/br.ufrn.spl.ev.engines.conflicts.directClassDiagram.ucd"/>
+                    <ownedOperation xmi:id="_maSCYIJAEeOSnasWRemx6Q" name="checkDirectConflicts" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_cgYIkIJBEeOSnasWRemx6Q" name="historyChangeLogSource" type="_iWpN0IJAEeOSnasWRemx6Q">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cgYIkYJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cgYvoIJBEeOSnasWRemx6Q" name="historyChangeLogTarget" type="_iWpN0IJAEeOSnasWRemx6Q">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cgYvoYJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cgZWsIJBEeOSnasWRemx6Q" type="_maVswIJAEeOSnasWRemx6Q" direction="return">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cgZWsYJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_maalQIJAEeOSnasWRemx6Q" name="DirectConflictsDetectionEvolutionLimitedStrategy">
+                    <eAnnotations xmi:id="_mabMUIJAEeOSnasWRemx6Q" source="br.ufrn.spl.ev/src/br/ufrn/spl/ev/engines/conflicts/direct/br.ufrn.spl.ev.engines.conflicts.directClassDiagram.ucd"/>
+                    <ownedOperation xmi:id="_mazm0IJAEeOSnasWRemx6Q" name="findTargetAsset" visibility="private" concurrency="concurrent">
+                      <ownedParameter xmi:id="_cKq-UIJBEeOSnasWRemx6Q" name="hashOfAssetTarget">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cKxE8IJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cK2kgIJBEeOSnasWRemx6Q" name="assetChangeLogSource">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cK8rIIJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_mbrJgIJAEeOSnasWRemx6Q" name="addConflictAssetToConflictModel" visibility="private" concurrency="concurrent">
+                      <ownedParameter xmi:id="_cJjkAIJBEeOSnasWRemx6Q" name="productLineConflictModel">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cJpqoIJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cJvKMIJBEeOSnasWRemx6Q" name="featureSource">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cJ1Q0IJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cJ7-gIJBEeOSnasWRemx6Q" name="assetSource">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cKBeEIJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cKHksIJBEeOSnasWRemx6Q" name="assetTarget">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cKNrUIJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cKTK4IJBEeOSnasWRemx6Q" name="changeLogsTarget">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cKYqcIJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cKeKAIJBEeOSnasWRemx6Q" name="conflictType">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cKkQoIJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_mdGF0IJAEeOSnasWRemx6Q" name="classHasInterfaceConflicting" visibility="private" concurrency="concurrent">
+                      <ownedParameter xmi:id="_cGNVEIJBEeOSnasWRemx6Q" name="classSource">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cGS0oIJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cGYUMIJBEeOSnasWRemx6Q" name="changeLogSource">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cGdMsIJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cGisQIJBEeOSnasWRemx6Q" name="classesTarget">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cGoL0IJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cGuScIJBEeOSnasWRemx6Q" name="productLineConflictModel">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cG0ZEIJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cG1AIIJBEeOSnasWRemx6Q" direction="return">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cG1nMIJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_mdlOAIJAEeOSnasWRemx6Q" name="classHasExtensionConflicting" visibility="private" concurrency="concurrent">
+                      <ownedParameter xmi:id="_cIz9IIJBEeOSnasWRemx6Q" name="classSource">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cI6DwIJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cJAKYIJBEeOSnasWRemx6Q" name="changeLogSource">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cJFp8IJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cJLwkIJBEeOSnasWRemx6Q" name="classesTarget">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cJRQIIJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cJXWwIJBEeOSnasWRemx6Q" name="productLineConflictModel">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cJc2UIJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cJddYIJBEeOSnasWRemx6Q" direction="return">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cJddYYJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_meM5EIJAEeOSnasWRemx6Q" name="addInformationClassConflicting" visibility="private" concurrency="concurrent">
+                      <ownedParameter xmi:id="_cLIRUIJBEeOSnasWRemx6Q" name="classSource">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cLNw4IJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cLTQcIJBEeOSnasWRemx6Q" name="changeLogSource">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cLZXEIJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cLe2oIJBEeOSnasWRemx6Q" name="featureSource">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cLk9QIJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cLrD4IJBEeOSnasWRemx6Q" name="hashOfClasseTarget">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cL004IJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cL67gIJBEeOSnasWRemx6Q" name="productLineConflictModel">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cMAbEIJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cMBCIIJBEeOSnasWRemx6Q" direction="return">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cMBCIYJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_mfNlsIJAEeOSnasWRemx6Q" name="checkDirectConflicts" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_cNY7IIJBEeOSnasWRemx6Q" name="historyChangeLogSource">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cNfBwIJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cNkhUIJBEeOSnasWRemx6Q" name="historyChangeLogTarget">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cNqA4IJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_mgNEMYJAEeOSnasWRemx6Q" name="checkMethodConflicting" visibility="private" concurrency="concurrent">
+                      <ownedParameter xmi:id="_cH1swIJBEeOSnasWRemx6Q" name="methodSource">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cH7MUIJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cIBS8IJBEeOSnasWRemx6Q" name="changeLogSource">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cILD8IJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cIQjgIJBEeOSnasWRemx6Q" name="featureSource">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cIVcAIJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cIa7kIJBEeOSnasWRemx6Q" name="hashOfMethodsTarget">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cIhCMIJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cInI0IJBEeOSnasWRemx6Q" name="productLineConflictModel">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cItPcIJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cIt2gIJBEeOSnasWRemx6Q" direction="return">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cIt2gYJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_mhNw0IJAEeOSnasWRemx6Q" name="checkFieldConflicting" visibility="private" concurrency="concurrent">
+                      <ownedParameter xmi:id="_cG8U4IJBEeOSnasWRemx6Q" name="fieldSource">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cHB0cIJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cHH7EIJBEeOSnasWRemx6Q" name="changeLogSource">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cHOBsIJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cHS6MIJBEeOSnasWRemx6Q" name="featureSource">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cHYZwIJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cHd5UIJBEeOSnasWRemx6Q" name="hashOfFieldsTarget">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cHjY4IJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cHo4cIJBEeOSnasWRemx6Q" name="productLineConflictModel">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cHu_EIJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cHvmIIJBEeOSnasWRemx6Q" direction="return">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cHvmIYJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_miQ5sIJAEeOSnasWRemx6Q" name="checkChangeLogConflicting" visibility="private" concurrency="concurrent">
+                      <ownedParameter xmi:id="_cMHv0IJBEeOSnasWRemx6Q" name="featureSource">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cMNPYIJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cMTWAIJBEeOSnasWRemx6Q" name="changeLogSource">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cMY1kIJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cMeVIIJBEeOSnasWRemx6Q" name="hashOfClassesTarget">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cMj0sIJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cMp7UIJBEeOSnasWRemx6Q" name="hashOfMethodsTarget">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cMva4IJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cM1hgIJBEeOSnasWRemx6Q" name="hashOfFieldsTarget">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cM7BEIJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cNAgoIJBEeOSnasWRemx6Q" name="classesTarget">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cNGAMIJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cNMG0IJBEeOSnasWRemx6Q" name="productLineConflictModel">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cNRmYIJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cNSNcIJBEeOSnasWRemx6Q" direction="return">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cNS0gIJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_mjMt0YJAEeOSnasWRemx6Q" name="classHasFieldsConflicting" visibility="private" concurrency="concurrent">
+                      <ownedParameter xmi:id="_cOzQYIJBEeOSnasWRemx6Q" name="classSource">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cO4v8IJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cPArwIJBEeOSnasWRemx6Q" name="changeLogSource">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cPGLUIJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cPLq4IJBEeOSnasWRemx6Q" name="featureSource">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cPRKcIJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cPbigIJBEeOSnasWRemx6Q" name="hashOfFieldsTarget">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cPiQMIJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cPoW0IJBEeOSnasWRemx6Q" name="productLineConflictModel">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cPudcIJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cPvEgIJBEeOSnasWRemx6Q" direction="return">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cPvEgYJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_mj-w8YJAEeOSnasWRemx6Q" name="classHasMethodsConflicting" visibility="private" concurrency="concurrent">
+                      <ownedParameter xmi:id="_cN1nEIJBEeOSnasWRemx6Q" name="classSource">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cN7tsIJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cOBNQIJBEeOSnasWRemx6Q" name="changeLogSource">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cOHT4IJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cONagIJBEeOSnasWRemx6Q" name="featureSource">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cOThIIJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cOZnwIJBEeOSnasWRemx6Q" name="hashOfMethodTarget">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cOfuYIJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cOlN8IJBEeOSnasWRemx6Q" name="productLineConflictModel">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cOrUkIJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_cOr7oIJBEeOSnasWRemx6Q" direction="return">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cOr7oYJBEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                  </packagedElement>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Package" xmi:id="_rTP8cIJAEeOSnasWRemx6Q" name="textual">
+                  <eAnnotations xmi:id="_rlUj4IJAEeOSnasWRemx6Q" source="br.ufrn.spl.ev/src/br/ufrn/spl/ev/engines/conflicts/textual/br.ufrn.spl.ev.engines.conflicts.textualClassDiagram.ucd" references="_rlT80IJAEeOSnasWRemx6Q"/>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_rlT80IJAEeOSnasWRemx6Q" name="TextualConflictsDetection">
+                    <eAnnotations xmi:id="_rlUj4YJAEeOSnasWRemx6Q" source="br.ufrn.spl.ev/src/br/ufrn/spl/ev/engines/conflicts/textual/br.ufrn.spl.ev.engines.conflicts.textualClassDiagram.ucd"/>
+                    <ownedAttribute xmi:id="_rlaDcIJAEeOSnasWRemx6Q" name="changeLogHistoryTarget" visibility="private" type="_iWpN0IJAEeOSnasWRemx6Q" association="_rlkbgoJAEeOSnasWRemx6Q">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_rlaqgIJAEeOSnasWRemx6Q">
+                        <value xsi:nil="true"/>
+                      </defaultValue>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_rlaqgoJAEeOSnasWRemx6Q" name="changeLogHistorySource" visibility="private" type="_iWpN0IJAEeOSnasWRemx6Q" association="_rlkbgIJAEeOSnasWRemx6Q">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_rlbRkIJAEeOSnasWRemx6Q">
+                        <value xsi:nil="true"/>
+                      </defaultValue>
+                    </ownedAttribute>
+                    <ownedOperation xmi:id="_rlbRkYJAEeOSnasWRemx6Q" name="checkTextualConflicts" visibility="public" concurrency="concurrent" raisedException="_iW8v0IJAEeOSnasWRemx6Q">
+                      <ownedParameter xmi:id="_rlb4oIJAEeOSnasWRemx6Q" name="changeLogHistorySource" type="_iWpN0IJAEeOSnasWRemx6Q">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rlb4oYJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_rlcfsIJAEeOSnasWRemx6Q" name="changeLogHistoryTarget" type="_iWpN0IJAEeOSnasWRemx6Q">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rlcfsYJAEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_rlfjAYJAEeOSnasWRemx6Q" name="performAnalysis" visibility="private" isLeaf="true" concurrency="concurrent" raisedException="_iW8v0IJAEeOSnasWRemx6Q"/>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Association" xmi:id="_rlkbgIJAEeOSnasWRemx6Q" memberEnd="_rlaqgoJAEeOSnasWRemx6Q _rlkbgYJAEeOSnasWRemx6Q">
+                    <ownedEnd xmi:id="_rlkbgYJAEeOSnasWRemx6Q" name="ownedEnd" type="_rlT80IJAEeOSnasWRemx6Q" association="_rlkbgIJAEeOSnasWRemx6Q"/>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Association" xmi:id="_rlkbgoJAEeOSnasWRemx6Q" memberEnd="_rlaDcIJAEeOSnasWRemx6Q _rlkbg4JAEeOSnasWRemx6Q">
+                    <ownedEnd xmi:id="_rlkbg4JAEeOSnasWRemx6Q" name="ownedEnd" type="_rlT80IJAEeOSnasWRemx6Q" association="_rlkbgoJAEeOSnasWRemx6Q"/>
+                  </packagedElement>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Package" xmi:id="_vvNfgIJCEeOSnasWRemx6Q" name="statistics">
+                  <eAnnotations xmi:id="_wCLe0IJCEeOSnasWRemx6Q" source="br.ufrn.spl.ev/src/br/ufrn/spl/ev/engines/conflicts/statistics/br.ufrn.spl.ev.engines.conflicts.statisticsClassDiagram.ucd" references="_wCK3wIJCEeOSnasWRemx6Q _xTUWkIJCEeOSnasWRemx6Q _xTgj0IJCEeOSnasWRemx6Q _yFkS4IJCEeOSnasWRemx6Q _yFsOsIJCEeOSnasWRemx6Q"/>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_wCK3wIJCEeOSnasWRemx6Q" name="AtomicEvolution">
+                    <eAnnotations xmi:id="_wCLe0YJCEeOSnasWRemx6Q" source="br.ufrn.spl.ev/src/br/ufrn/spl/ev/engines/conflicts/statistics/br.ufrn.spl.ev.engines.conflicts.statisticsClassDiagram.ucd"/>
+                    <ownedAttribute xmi:id="_wEfzAIJCEeOSnasWRemx6Q" name="depthLevel" visibility="private">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_wEgaEIJCEeOSnasWRemx6Q" value="0"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_wEgaEYJCEeOSnasWRemx6Q" name="deltaType" visibility="private">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_wEhBIIJCEeOSnasWRemx6Q">
+                        <value xsi:nil="true"/>
+                      </defaultValue>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_wElSkIJCEeOSnasWRemx6Q" name="description" visibility="private">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_wEl5oIJCEeOSnasWRemx6Q">
+                        <value xsi:nil="true"/>
+                      </defaultValue>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_wEqLEIJCEeOSnasWRemx6Q" name="variability" visibility="private">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_wEqyIIJCEeOSnasWRemx6Q">
+                        <value xsi:nil="true"/>
+                      </defaultValue>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_wEucgIJCEeOSnasWRemx6Q" name="directConflict" visibility="private">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_wEvDkIJCEeOSnasWRemx6Q" value="0"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_wEvqoIJCEeOSnasWRemx6Q" name="taskType" visibility="private">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_wEvqoYJCEeOSnasWRemx6Q">
+                        <value xsi:nil="true"/>
+                      </defaultValue>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_wEz8EIJCEeOSnasWRemx6Q" name="layer" visibility="private">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_wEz8EYJCEeOSnasWRemx6Q">
+                        <value xsi:nil="true"/>
+                      </defaultValue>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_wE4NgIJCEeOSnasWRemx6Q" name="indirectConflict" visibility="private">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_wE40kIJCEeOSnasWRemx6Q" value="0"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_wE40kYJCEeOSnasWRemx6Q" name="textualConflict" visibility="private">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_wE5boIJCEeOSnasWRemx6Q" value="0"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_wE5boYJCEeOSnasWRemx6Q" name="taskNumber" visibility="private">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_wE5booJCEeOSnasWRemx6Q">
+                        <value xsi:nil="true"/>
+                      </defaultValue>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_wE9tEIJCEeOSnasWRemx6Q" name="signature" visibility="private">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_wE-UIIJCEeOSnasWRemx6Q">
+                        <value xsi:nil="true"/>
+                      </defaultValue>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_wFB-gIJCEeOSnasWRemx6Q" name="version" visibility="private">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_wFClkIJCEeOSnasWRemx6Q">
+                        <value xsi:nil="true"/>
+                      </defaultValue>
+                    </ownedAttribute>
+                    <ownedOperation xmi:id="_wFMWkIJCEeOSnasWRemx6Q" name="setLayer" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_wFQoAIJCEeOSnasWRemx6Q" name="layer">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wFU5cIJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_wFVggIJCEeOSnasWRemx6Q" name="getCSV" visibility="public" concurrency="concurrent"/>
+                    <ownedOperation xmi:id="_wFZx8IJCEeOSnasWRemx6Q" name="getLayer" visibility="public" concurrency="concurrent"/>
+                    <ownedOperation xmi:id="_wFeqcIJCEeOSnasWRemx6Q" name="getVersion" visibility="public" concurrency="concurrent"/>
+                    <ownedOperation xmi:id="_wFiU0IJCEeOSnasWRemx6Q" name="setDirectConflict" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_wFi74IJCEeOSnasWRemx6Q" name="directConflict">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wFji8IJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_wFji8YJCEeOSnasWRemx6Q" name="setDeltaType" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_wFn0YIJCEeOSnasWRemx6Q" name="deltaType">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wFsF0IJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_wFss4IJCEeOSnasWRemx6Q" name="getTaskType" visibility="public" concurrency="concurrent"/>
+                    <ownedOperation xmi:id="_wFw-UIJCEeOSnasWRemx6Q" name="getColumns" visibility="public" isStatic="true" concurrency="concurrent"/>
+                    <ownedOperation xmi:id="_wF1PwIJCEeOSnasWRemx6Q" name="getDepthLevel" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_wF120IJCEeOSnasWRemx6Q" direction="return">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wF2d4IJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_wF2d4YJCEeOSnasWRemx6Q" name="getVariability" visibility="public" concurrency="concurrent"/>
+                    <ownedOperation xmi:id="_wF6vUIJCEeOSnasWRemx6Q" name="setChangeLogInformation" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_wF9yo4JCEeOSnasWRemx6Q" name="changeLog" type="_wF9yoIJCEeOSnasWRemx6Q">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wF-ZsIJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_wF-ZsYJCEeOSnasWRemx6Q" name="getDeltaType" visibility="public" concurrency="concurrent"/>
+                    <ownedOperation xmi:id="_wGCrIIJCEeOSnasWRemx6Q" name="AtomicEvolution" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_wGFucoJCEeOSnasWRemx6Q" name="classChangeLog" type="_wGFucIJCEeOSnasWRemx6Q">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wGGVgIJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_wGGVgYJCEeOSnasWRemx6Q" name="setAssetInformation" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_wGIxwIJCEeOSnasWRemx6Q" name="assetChangeLog" type="_iWs4MIJAEeOSnasWRemx6Q">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wGNDMIJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_wGNqQIJCEeOSnasWRemx6Q" name="AtomicEvolution" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_wGQtkYJCEeOSnasWRemx6Q" name="methodChangeLog" type="_wGQGgIJCEeOSnasWRemx6Q">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wGQtkoJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_wGQtk4JCEeOSnasWRemx6Q" name="getSignature" visibility="public" concurrency="concurrent"/>
+                    <ownedOperation xmi:id="_wGU_AIJCEeOSnasWRemx6Q" name="getLayerStatInformation" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_wGVmEIJCEeOSnasWRemx6Q" name="asset" type="_iWs4MIJAEeOSnasWRemx6Q">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wGWNIIJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_wGZ3gIJCEeOSnasWRemx6Q" name="setVariability" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_wGeI8IJCEeOSnasWRemx6Q" name="variability">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wGiaYIJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_wGjBcIJCEeOSnasWRemx6Q" name="setIndirectConflict" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_wGjogIJCEeOSnasWRemx6Q" name="indirectConflict">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wGkPkIJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_wGkPkYJCEeOSnasWRemx6Q" name="getDescription" visibility="public" concurrency="concurrent"/>
+                    <ownedOperation xmi:id="_wGpIEIJCEeOSnasWRemx6Q" name="getTaskNumber" visibility="public" concurrency="concurrent"/>
+                    <ownedOperation xmi:id="_wGuAkIJCEeOSnasWRemx6Q" name="AtomicEvolution" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_wGxD4YJCEeOSnasWRemx6Q" name="fieldChangeLog" type="_wGwc0IJCEeOSnasWRemx6Q">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wGxq8IJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_wGxq8YJCEeOSnasWRemx6Q" name="setDepthLevel" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_wGySAIJCEeOSnasWRemx6Q" name="depthLevel">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wGySAYJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_wGy5EIJCEeOSnasWRemx6Q" name="setTaskType" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_wG3KgIJCEeOSnasWRemx6Q" name="taskType">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wG604IJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_wG7b8IJCEeOSnasWRemx6Q" name="setTaskNumber" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_wHAUcIJCEeOSnasWRemx6Q" name="taskNumber">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wHEl4IJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_wHEl4YJCEeOSnasWRemx6Q" name="setTextualConflict" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_wHFM8IJCEeOSnasWRemx6Q" name="textualConflict">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wHF0AIJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_wHF0AYJCEeOSnasWRemx6Q" name="setSignature" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_wHKsgIJCEeOSnasWRemx6Q" name="signature">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wHO98IJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_wHO98YJCEeOSnasWRemx6Q" name="setVersion" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_wHTPYIJCEeOSnasWRemx6Q" name="version">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wHXg0IJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_wHYH4IJCEeOSnasWRemx6Q" name="getDirectConflict" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_wHYu8IJCEeOSnasWRemx6Q" direction="return">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wHYu8YJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_wHYu8oJCEeOSnasWRemx6Q" name="setDescription" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_wHdncIJCEeOSnasWRemx6Q" name="description">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wHhR0IJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_wHh44IJCEeOSnasWRemx6Q" name="getTextualConflict" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_wHif8IJCEeOSnasWRemx6Q" direction="return">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wHjHAIJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_wHjHAYJCEeOSnasWRemx6Q" name="getIndirectConflict" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_wHjuEIJCEeOSnasWRemx6Q" direction="return">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wHkVIIJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Interface" xmi:id="_xTUWkIJCEeOSnasWRemx6Q" name="CollectStatistics">
+                    <eAnnotations xmi:id="_xTUWkYJCEeOSnasWRemx6Q" source="br.ufrn.spl.ev/src/br/ufrn/spl/ev/engines/conflicts/statistics/br.ufrn.spl.ev.engines.conflicts.statisticsClassDiagram.ucd"/>
+                    <ownedOperation xmi:id="_xTWLwIJCEeOSnasWRemx6Q" name="collectStatistics" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_xTXZ4IJCEeOSnasWRemx6Q" name="changeLogHistory" type="_iWpN0IJAEeOSnasWRemx6Q">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xTYA8IJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_xTYA8YJCEeOSnasWRemx6Q" name="changeLogTarget" type="_iWpN0IJAEeOSnasWRemx6Q">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xTYA8oJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_xTYoAIJCEeOSnasWRemx6Q" name="saveStatisticsCollected" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_xTZ2IIJCEeOSnasWRemx6Q" name="filePath">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xTbEQIJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_xTgj0IJCEeOSnasWRemx6Q" name="CollectSimpleStatisticInformation">
+                    <eAnnotations xmi:id="_xTgj0YJCEeOSnasWRemx6Q" source="br.ufrn.spl.ev/src/br/ufrn/spl/ev/engines/conflicts/statistics/br.ufrn.spl.ev.engines.conflicts.statisticsClassDiagram.ucd"/>
+                    <ownedAttribute xmi:id="_xf1IkIJCEeOSnasWRemx6Q" name="TEXTUAL_CONFLICTING_VARIABILITY_CONDITIONAL_EXEC" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xf1voIJCEeOSnasWRemx6Q" value="&quot;TEXTUAL_CONFLICTS_VARIABILITY_CONDITIONAL_EXEC&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xf4y8IJCEeOSnasWRemx6Q" name="INDIRECT_CONFLICTING_ATOMIC_FIELD_REMOVED" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xf5aAIJCEeOSnasWRemx6Q" value="&quot;INDIRECT_CONFLICTING_ATOMIC_FIELD_REMOVED&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xf8dUIJCEeOSnasWRemx6Q" name="INDIRECT_CONFLICTING_ATOMIC_METHOD_ADDED" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xf8dUYJCEeOSnasWRemx6Q" value="&quot;INDIRECT_CONFLICTING_ATOMIC_METHOD_ADDED&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xf_goIJCEeOSnasWRemx6Q" name="tableTaskSource" visibility="package">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xgAHsIJCEeOSnasWRemx6Q" value="new ArrayList&lt;TaskStatistic>()"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xgFnQIJCEeOSnasWRemx6Q" name="TEXTUAL_CONFLICTING_ATOMIC_CLASS_UPDATED" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xgGOUIJCEeOSnasWRemx6Q" value="&quot;TEXTUAL_CONFLICTING_ATOMIC_CLASS_UPDATED&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xgJRoIJCEeOSnasWRemx6Q" name="INDIRECT_CONFLICTING_ATOMIC_METHOD_REMOVED" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xgJRoYJCEeOSnasWRemx6Q" value="&quot;INDIRECT_CONFLICTING_ATOMIC_METHOD_REMOVED&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xgMU8IJCEeOSnasWRemx6Q" name="DIRECT_CONFLICTING_TOTAL_EVOLUTIONS_TASK" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xgM8AIJCEeOSnasWRemx6Q" value="&quot;DIRECT_CONFLICTING_TOTAL_EVOLUTIONS_TASK&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xgPYQIJCEeOSnasWRemx6Q" name="EVOLUTIONS_TASK_NEW_USE_CASE" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xgP_UIJCEeOSnasWRemx6Q" value="&quot;EVOLUTIONS_TASK_NEW_USE_CASE&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xgTCoIJCEeOSnasWRemx6Q" name="INDIRECT_CONFLICTING_TOTAL_EVOLUTIONS_TASK_VARIABILITY" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xgTCoYJCEeOSnasWRemx6Q" value="&quot;INDIRECT_CONFLICTING_TOTAL_EVOLUTIONS_TASK_VARIABILITY&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xgWF8IJCEeOSnasWRemx6Q" name="EVOLUTIONS_ATOMIC_UPDATED_CLASS" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xgWtAIJCEeOSnasWRemx6Q" value="&quot;EVOLUTIONS_ATOMIC_UPDATED_CLASS&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xgZwUIJCEeOSnasWRemx6Q" name="TEXTUAL_CONFLICTING_LAYER_OTHERS" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xgZwUYJCEeOSnasWRemx6Q" value="&quot;TEXTUAL_CONFLICTING_LAYER_OTHERS&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xgczoIJCEeOSnasWRemx6Q" name="EVOLUTIONS_ATOMIC_FIELD_REMOVED" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xgdasIJCEeOSnasWRemx6Q" value="&quot;EVOLUTIONS_ATOMIC_FIELD_REMOVED&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xgf28IJCEeOSnasWRemx6Q" name="DIRECT_CONFLICTING_ATOMIC_CLASS_REMOVED" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xggeAIJCEeOSnasWRemx6Q" value="&quot;DIRECT_CONFLICTING_ATOMIC_CLASS_REMOVED&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xgjhUIJCEeOSnasWRemx6Q" name="TEXTUAL_CONFLICTING_VARIABILITY_PATTERN" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xgjhUYJCEeOSnasWRemx6Q" value="&quot;TEXTUAL_CONFLICTS_VARIABILITY_PATTERN&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xgmkoIJCEeOSnasWRemx6Q" name="statisticTarget" visibility="private">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xgnLsIJCEeOSnasWRemx6Q" value="new TreeMap&lt;String,Integer>()"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xgsEMIJCEeOSnasWRemx6Q" name="DIRECT_CONFLICTING_TASK_NEW_USE_CASE" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xgsrQIJCEeOSnasWRemx6Q" value="&quot;DIRECT_CONFLICTING_TASK_NEW_USE_CASE&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xgvukIJCEeOSnasWRemx6Q" name="EVOLUTIONS_TOTAL_ATOMIC" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xgvukYJCEeOSnasWRemx6Q" value="&quot;EVOLUTIONS_TOTAL_ATOMIC&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xgyx4IJCEeOSnasWRemx6Q" name="INDIRECT_CONFLICTING_ATOMIC_METHOD_UPDATED" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xgzY8IJCEeOSnasWRemx6Q" value="&quot;INDIRECT_CONFLICTING_ATOMIC_METHOD_UPDATED&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xg3DUIJCEeOSnasWRemx6Q" name="EVOLUTIONS_TOTAL_TASK_VARIABIITY_CONDEXEC" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xg3DUYJCEeOSnasWRemx6Q" value="&quot;EVOLUTIONS_TOTAL_TASK_VARIABIITY_CONDEXEC&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xg6GoIJCEeOSnasWRemx6Q" name="TEXTUAL_CONFLICTING_TASK_BUG_FIX" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xg6tsIJCEeOSnasWRemx6Q" value="&quot;TEXTUAL_CONFLICTING_TASK_BUG_FIX&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xg9xAIJCEeOSnasWRemx6Q" name="DIRECT_CONFLICTING_ATOMIC_FIELD_ADDED" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xg9xAYJCEeOSnasWRemx6Q" value="&quot;DIRECT_CONFLICTING_ATOMIC_FIELD_ADDED&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xhA0UIJCEeOSnasWRemx6Q" name="INDIRECT_CONFLICTING_ATOMIC_CLASS_ADDED" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xhBbYIJCEeOSnasWRemx6Q" value="&quot;INDIRECT_CONFLICTING_ATOMIC_CLASS_ADDED&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xhEesIJCEeOSnasWRemx6Q" name="TEXTUAL_CONFLICTING_TASK_NEW_USE_CASE" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xhFFwIJCEeOSnasWRemx6Q" value="&quot;TEXTUAL_CONFLICTING_TASK_NEW_USE_CASE&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xhHiAIJCEeOSnasWRemx6Q" name="DIRECT_CONFLICTING_TASK_BUG_FIX" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xhIJEIJCEeOSnasWRemx6Q" value="&quot;DIRECT_CONFLICTING_TASK_BUG_FIX&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xhLMYIJCEeOSnasWRemx6Q" name="DIRECT_CONFLICTING_ATOMIC_CLASS_UPDATED" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xhLzcIJCEeOSnasWRemx6Q" value="&quot;DIRECT_CONFLICTING_ATOMIC_CLASS_UPDATED&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xhO2wIJCEeOSnasWRemx6Q" name="INDIRECT_CONFLICTING_ATOMIC_CLASS_UPDATED" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xhO2wYJCEeOSnasWRemx6Q" value="&quot;INDIRECT_CONFLICTING_ATOMIC_CLASS_UPDATED&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xhU9YIJCEeOSnasWRemx6Q" name="EVOLUTIONS_ATOMIC_METHOD_UPDATED" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xhU9YYJCEeOSnasWRemx6Q" value="&quot;EVOLUTIONS_ATOMIC_METHOD_UPDATED&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xhYAsIJCEeOSnasWRemx6Q" name="tableTarget" visibility="package">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xhYnwIJCEeOSnasWRemx6Q" value="new ArrayList&lt;AtomicEvolution>()"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xheHUIJCEeOSnasWRemx6Q" name="statisticSource" visibility="private">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xheuYIJCEeOSnasWRemx6Q" value="new TreeMap&lt;String,Integer>()"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xhkN8IJCEeOSnasWRemx6Q" name="EVOLUTIONS_TOTAL_TASK_VARIABIITY_PATTERN" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xhk1AIJCEeOSnasWRemx6Q" value="&quot;EVOLUTIONS_TOTAL_TASK_VARIABIITY_PATTERN&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xhn4UIJCEeOSnasWRemx6Q" name="DIRECT_CONFLICTING_TOTAL_EVOLUTIONS_ATOMIC" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xhofYIJCEeOSnasWRemx6Q" value="&quot;DIRECT_CONFLICTING_TOTAL_EVOLUTIONS_ATOMIC&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xhrisIJCEeOSnasWRemx6Q" name="INDIRECT_CONFLICTING_LAYER_ENTITY" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xhsJwIJCEeOSnasWRemx6Q" value="&quot;INDIRECT_CONFLICTING_LAYER_ENTITY&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xhvNEIJCEeOSnasWRemx6Q" name="DIRECT_CONFLICTING_ATOMIC_FIELD_REMOVED" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xhv0IIJCEeOSnasWRemx6Q" value="&quot;DIRECT_CONFLICTING_ATOMIC_FIELD_REMOVED&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xh0soIJCEeOSnasWRemx6Q" name="INDIRECT_CONFLICTING_VARIABILITY_CONDITIONAL_EXEC" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xh1TsIJCEeOSnasWRemx6Q" value="&quot;INDIRECT_CONFLICTS_VARIABILITY_CONDITIONAL_EXEC&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xh4XAIJCEeOSnasWRemx6Q" name="TEXTUAL_CONFLICTING_TASK_NEW_FUNCIONALITY" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xh4-EIJCEeOSnasWRemx6Q" value="&quot;TEXTUAL_CONFLICTING_TASK_NEW_FUNCIONALITY&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xh8BYIJCEeOSnasWRemx6Q" name="INDIRECT_CONFLICTING_LAYER_BUSINESS" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xh8ocIJCEeOSnasWRemx6Q" value="&quot;INDIRECT_CONFLICTING_LAYER_BUSINESS&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xiAS0IJCEeOSnasWRemx6Q" name="INDIRECT_CONFLICTING_TOTAL_EVOLUTIONS_ATOMIC" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xiA54IJCEeOSnasWRemx6Q" value="&quot;INDIRECT_CONFLICTING_TOTAL_EVOLUTIONS_ATOMIC&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xiEkQIJCEeOSnasWRemx6Q" name="EVOLUTIONS_ATOMIC_CLASS_ADDED" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xiEkQYJCEeOSnasWRemx6Q" value="&quot;EVOLUTIONS_ATOMIC_CLASS_ADDED&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xiHnkIJCEeOSnasWRemx6Q" name="EVOLUTIONS_TOTAL_TASK_NO_CONFLICT" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xiIOoIJCEeOSnasWRemx6Q" value="&quot;EVOLUTIONS_TOTAL_TASK_NO_CONFLICT&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xiKq4IJCEeOSnasWRemx6Q" name="EVOLUTIONS_ATOMIC_METHOD_REMOVED" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xiLR8IJCEeOSnasWRemx6Q" value="&quot;EVOLUTIONS_ATOMIC_METHOD_REMOVED&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xiQKcIJCEeOSnasWRemx6Q" name="EVOLUTIONS_ATOMIC_FIELD_UPDATED" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xiQKcYJCEeOSnasWRemx6Q" value="&quot;EVOLUTIONS_ATOMIC_FIELD_UPDATED&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xiT00IJCEeOSnasWRemx6Q" name="tableSource" visibility="package">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xiT00YJCEeOSnasWRemx6Q" value="new ArrayList&lt;AtomicEvolution>()"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xiaigIJCEeOSnasWRemx6Q" name="DIRECT_CONFLICTING_TOTAL_EVOLUTIONS_TASK_VARIABILITY" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xibJkIJCEeOSnasWRemx6Q" value="&quot;DIRECT_CONFLICTING_TOTAL_EVOLUTIONS_TASK_VARIABILITY&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xifbAIJCEeOSnasWRemx6Q" name="DIRECT_CONFLICTING_LAYER_ENTITY" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xigCEIJCEeOSnasWRemx6Q" value="&quot;DIRECT_CONFLICTING_LAYER_ENTITY&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xijFYIJCEeOSnasWRemx6Q" name="EVOLUTIONS_TOTAL_TASK_VARIABIITY_CONFLICT" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xijFYYJCEeOSnasWRemx6Q" value="&quot;EVOLUTIONS_TOTAL_TASK_VARIABIITY_CONFLICT&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xinW0IJCEeOSnasWRemx6Q" name="DIRECT_CONFLICTING_TASK_NEW_FUNCIONALITY" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xin94IJCEeOSnasWRemx6Q" value="&quot;DIRECT_CONFLICTING_TASK_NEW_FUNCIONALITY&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xirBMIJCEeOSnasWRemx6Q" name="TEXTUAL_CONFLICTING_TOTAL_EVOLUTIONS_TASK" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xiroQIJCEeOSnasWRemx6Q" value="&quot;TEXTUAL_CONFLICTING_TOTAL_EVOLUTIONS_TASK&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xiurkIJCEeOSnasWRemx6Q" name="DIRECT_CONFLICTING_ATOMIC_METHOD_ADDED" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xivSoIJCEeOSnasWRemx6Q" value="&quot;DIRECT_CONFLICTING_ATOMIC_METHOD_ADDED&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xiy9AIJCEeOSnasWRemx6Q" name="INDIRECT_CONFLICTING_ATOMIC_FIELD_ADDED" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xizkEIJCEeOSnasWRemx6Q" value="&quot;INDIRECT_CONFLICTING_ATOMIC_FIELD_ADDED&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xi2AUIJCEeOSnasWRemx6Q" name="EVOLUTIONS_ATOMIC_METHOD_ADDED" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xi2nYIJCEeOSnasWRemx6Q" value="&quot;EVOLUTIONS_ATOMIC_METHOD_ADDED&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xi6RwIJCEeOSnasWRemx6Q" name="DIRECT_CONFLICTING_ATOMIC_FIELD_UPDATED" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xi640IJCEeOSnasWRemx6Q" value="&quot;DIRECT_CONFLICTING_ATOMIC_FIELD_UPDATED&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xi98IIJCEeOSnasWRemx6Q" name="DIRECT_CONFLICTING_ATOMIC_METHOD_UPDATED" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xi98IYJCEeOSnasWRemx6Q" value="&quot;DIRECT_CONFLICTING_ATOMIC_METHOD_UPDATED&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xjA_cIJCEeOSnasWRemx6Q" name="INDIRECT_CONFLICTING_ATOMIC_CLASS_REMOVED" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xjBmgIJCEeOSnasWRemx6Q" value="&quot;INDIRECT_CONFLICTING_ATOMIC_CLASS_REMOVED&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xjFQ4IJCEeOSnasWRemx6Q" name="TOTAL_EVOLUTIONS_VARIABILITY_PATTERN" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xjFQ4YJCEeOSnasWRemx6Q" value="&quot;TOTAL_EVOLUTIONS_VARIABILITY_PATTERN&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xjIUMIJCEeOSnasWRemx6Q" name="INDIRECT_CONFLICTING_TASK_BUG_FIX" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xjI7QIJCEeOSnasWRemx6Q" value="&quot;INDIRECT_CONFLICTING_TASK_BUG_FIX&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xjL-kIJCEeOSnasWRemx6Q" name="INDIRECT_CONFLICTING_ATOMIC_FIELD_UPDATED" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xjMloIJCEeOSnasWRemx6Q" value="&quot;INDIRECT_CONFLICTING_ATOMIC_FIELD_UPDATED&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xjQQAIJCEeOSnasWRemx6Q" name="DIRECT_CONFLICTING_LAYER_OTHERS" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xjQ3EIJCEeOSnasWRemx6Q" value="&quot;DIRECT_CONFLICTING_LAYER_OTHERS&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xjT6YIJCEeOSnasWRemx6Q" name="DIRECT_CONFLICTING_ATOMIC_CLASS_ADDED" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xjT6YYJCEeOSnasWRemx6Q" value="&quot;DIRECT_CONFLICTING_ATOMIC_CLASS_ADDED&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xjYy4IJCEeOSnasWRemx6Q" name="EVOLUTIONS_TOTAL_TASK" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xjZZ8IJCEeOSnasWRemx6Q" value="&quot;EVOLUTIONS_TOTAL_TASK&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xjdrYIJCEeOSnasWRemx6Q" name="DIRECT_CONFLICTING_LAYER_WEB" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xjeScIJCEeOSnasWRemx6Q" value="&quot;DIRECT_CONFLICTING_LAYER_WEB&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xjjK8IJCEeOSnasWRemx6Q" name="TEXTUAL_CONFLICTING_TOTAL_EVOLUTIONS_ATOMIC" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xjjyAIJCEeOSnasWRemx6Q" value="&quot;TEXTUAL_CONFLICTING_TOTAL_EVOLUTIONS_ATOMIC&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xjm1UIJCEeOSnasWRemx6Q" name="INDIRECT_CONFLICTING_VARIABILITY_PATTERN" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xjncYIJCEeOSnasWRemx6Q" value="&quot;INDIRECT_CONFLICTS_VARIABILITY_PATTERN&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xjrGwIJCEeOSnasWRemx6Q" name="TEXTUAL_CONFLICTING_LAYER_ENTITY" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xjrt0IJCEeOSnasWRemx6Q" value="&quot;TEXTUAL_CONFLICTING_LAYER_ENTITY&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xjvYMIJCEeOSnasWRemx6Q" name="TEXTUAL_CONFLICTING_LAYER_DATA_ACCESS" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xjv_QIJCEeOSnasWRemx6Q" value="&quot;TEXTUAL_CONFLICTING_LAYER_DATA_ACCESS&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xjzCkIJCEeOSnasWRemx6Q" name="EVOLUTIONS_ATOMIC_FIELD_ADDED" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xjzpoIJCEeOSnasWRemx6Q" value="&quot;EVOLUTIONS_ATOMIC_FIELD_ADDED&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xj3UAIJCEeOSnasWRemx6Q" name="tableTaskTarget" visibility="package">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xj37EIJCEeOSnasWRemx6Q" value="new ArrayList&lt;TaskStatistic>()"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xj8zkIJCEeOSnasWRemx6Q" name="DIRECT_CONFLICTING_LAYER_DATA_ACCESS" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xj9aoIJCEeOSnasWRemx6Q" value="&quot;DIRECT_CONFLICTING_LAYER_DATA_ACCESS&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xkAd8IJCEeOSnasWRemx6Q" name="TEXTUAL_CONFLICTING_TOTAL_EVOLUTIONS_TASK_VARIABILITY" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xkBFAIJCEeOSnasWRemx6Q" value="&quot;TEXTUAL_CONFLICTING_TOTAL_EVOLUTIONS_TASK_VARIABILITY&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xkDhQIJCEeOSnasWRemx6Q" name="INDIRECT_CONFLICTING_TASK_NEW_FUNCIONALITY" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xkEIUIJCEeOSnasWRemx6Q" value="&quot;INDIRECT_CONFLICTING_TASK_NEW_FUNCIONALITY&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xkIZwIJCEeOSnasWRemx6Q" name="INDIRECT_CONFLICTING_LAYER_WEB" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xkJA0IJCEeOSnasWRemx6Q" value="&quot;INDIRECT_CONFLICTING_LAYER_WEB&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xkMEIIJCEeOSnasWRemx6Q" name="EVOLUTIONS_TASK_NEW_FUNCIONALITY" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xkMrMIJCEeOSnasWRemx6Q" value="&quot;EVOLUTIONS_TASK_NEW_FUNCIONALITY&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xkPHcIJCEeOSnasWRemx6Q" name="DIRECT_CONFLICTING_VARIABILITY_CONDITIONAL_EXEC" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xkPugIJCEeOSnasWRemx6Q" value="&quot;DIRECT_CONFLICTS_VARIABILITY_CONDITIONAL_EXEC&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xkSx0IJCEeOSnasWRemx6Q" name="TOTAL_EVOLUTIONS_VARIABILITY_CONDITIONAL_EXEC" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xkTY4IJCEeOSnasWRemx6Q" value="&quot;TOTAL_EVOLUTIONS_VARIABILITY_CONDITIONAL_EXEC&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xkV1IIJCEeOSnasWRemx6Q" name="EVOLUTIONS_ATOMIC_CLASS_MODIFIED" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xkWcMIJCEeOSnasWRemx6Q" value="&quot;EVOLUTIONS_ATOMIC_CLASS_MODIFIED&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xkY4cIJCEeOSnasWRemx6Q" name="EVOLUTIONS_ATOMIC_CLASS_REMOVED" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xkZfgIJCEeOSnasWRemx6Q" value="&quot;EVOLUTIONS_ATOMIC_CLASS_REMOVED&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xkci0IJCEeOSnasWRemx6Q" name="EVOLUTIONS_TOTAL_TASK_CORE" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xkdJ4IJCEeOSnasWRemx6Q" value="&quot;EVOLUTIONS_TOTAL_TASK_CORE&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xkgNMIJCEeOSnasWRemx6Q" name="DIRECT_CONFLICTING_VARIABILITY_PATTERN" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xkg0QIJCEeOSnasWRemx6Q" value="&quot;DIRECT_CONFLICTS_VARIABILITY_PATTERN&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xkjQgIJCEeOSnasWRemx6Q" name="statisticMode" visibility="private">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xkj3kIJCEeOSnasWRemx6Q" value="'S'"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xkj3kYJCEeOSnasWRemx6Q" name="TEXTUAL_CONFLICTING_LAYER_WEB" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xkkeoIJCEeOSnasWRemx6Q" value="&quot;TEXTUAL_CONFLICTING_LAYER_WEB&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xknh8IJCEeOSnasWRemx6Q" name="TEXTUAL_CONFLICTING_LAYER_BUSINESS" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xknh8YJCEeOSnasWRemx6Q" value="&quot;TEXTUAL_CONFLICTING_LAYER_BUSINESS&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xkqlQIJCEeOSnasWRemx6Q" name="INDIRECT_CONFLICTING_TOTAL_EVOLUTIONS_TASK" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xkrMUIJCEeOSnasWRemx6Q" value="&quot;INDIRECT_CONFLICTING_TOTAL_EVOLUTIONS_TASK&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xktokIJCEeOSnasWRemx6Q" name="INDIRECT_CONFLICTING_TASK_NEW_USE_CASE" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xkuPoIJCEeOSnasWRemx6Q" value="&quot;INDIRECT_CONFLICTING_TASK_NEW_USE_CASE&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xkwr4IJCEeOSnasWRemx6Q" name="INDIRECT_CONFLICTING_LAYER_DATA_ACCESS" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xkxS8IJCEeOSnasWRemx6Q" value="&quot;INDIRECT_CONFLICTING_LAYER_DATA_ACCESS&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xk0WQIJCEeOSnasWRemx6Q" name="DIRECT_CONFLICTING_ATOMIC_METHOD_REMOVED" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xk0WQYJCEeOSnasWRemx6Q" value="&quot;DIRECT_CONFLICTING_ATOMIC_METHOD_REMOVED&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xk3ZkIJCEeOSnasWRemx6Q" name="EVOLUTIONS_TASK_BUG_FIX" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xk4AoIJCEeOSnasWRemx6Q" value="&quot;EVOLUTIONS_TASK_BUG_FIX&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xk7D8IJCEeOSnasWRemx6Q" name="INDIRECT_CONFLICTING_LAYER_OTHERS" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xk7rAIJCEeOSnasWRemx6Q" value="&quot;INDIRECT_CONFLICTING_LAYER_OTHERS&quot;"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_xk-HQIJCEeOSnasWRemx6Q" name="DIRECT_CONFLICTING_LAYER_BUSINESS" visibility="public" isLeaf="true" isStatic="true" isReadOnly="true">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xk-uUIJCEeOSnasWRemx6Q" value="&quot;DIRECT_CONFLICTING_LAYER_BUSINESS&quot;"/>
+                    </ownedAttribute>
+                    <ownedOperation xmi:id="_xlBxoIJCEeOSnasWRemx6Q" name="createEvolutionTable" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_xlE08IJCEeOSnasWRemx6Q" name="changeLogHistory">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xlH4QIJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_xlK7kIJCEeOSnasWRemx6Q" name="table">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xlN-4IJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_xlOl8IJCEeOSnasWRemx6Q" name="saveStatisticsCollected" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_xlRpQIJCEeOSnasWRemx6Q" name="filePath">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xlVToIJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_xlV6sIJCEeOSnasWRemx6Q" name="collectGlobalStatisics" visibility="private" concurrency="concurrent">
+                      <ownedParameter xmi:id="_xlZlEIJCEeOSnasWRemx6Q" name="changeLogHistory">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xldPcIJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_xld2gIJCEeOSnasWRemx6Q" name="initStatistics" visibility="public" concurrency="concurrent"/>
+                    <ownedOperation xmi:id="_xlhg4IJCEeOSnasWRemx6Q" name="collectStatistics" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_xllLQIJCEeOSnasWRemx6Q" name="changeLogHistory">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xlo1oIJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_xlr48IJCEeOSnasWRemx6Q" name="changeLogHistoryTarget">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xlvjUIJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_xlwKYIJCEeOSnasWRemx6Q" name="analizeLPS" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_xlz0wIJCEeOSnasWRemx6Q" name="changeLogHistory">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xl3fIIJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_xl4tQIJCEeOSnasWRemx6Q" name="createEvolutionTaskTable" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_xl8-sIJCEeOSnasWRemx6Q" name="changeLogHistory">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xmApEIJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_xmE6gIJCEeOSnasWRemx6Q" name="table">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xmH90IJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_xmIk4IJCEeOSnasWRemx6Q" name="collectStatistics" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_xmM2UIJCEeOSnasWRemx6Q" name="type">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xmRHwIJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                      <ownedParameter xmi:id="_xmRu0IJCEeOSnasWRemx6Q" name="qtd">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xmRu0YJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_xmSV4IJCEeOSnasWRemx6Q" name="getLayerStatInformation" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_xmWnUIJCEeOSnasWRemx6Q" name="ccl">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xma4wIJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_xmfxQIJCEeOSnasWRemx6Q" name="CollectSimpleStatisticInformation" visibility="public" concurrency="concurrent"/>
+                    <ownedOperation xmi:id="_xmgYUIJCEeOSnasWRemx6Q" name="init" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_xmkpwIJCEeOSnasWRemx6Q" name="type">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xmoUIIJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_yFkS4IJCEeOSnasWRemx6Q" name="CollectStatisticsFactory">
+                    <eAnnotations xmi:id="_yFk58IJCEeOSnasWRemx6Q" source="br.ufrn.spl.ev/src/br/ufrn/spl/ev/engines/conflicts/statistics/br.ufrn.spl.ev.engines.conflicts.statisticsClassDiagram.ucd"/>
+                    <ownedOperation xmi:id="_yFnWMIJCEeOSnasWRemx6Q" name="getStatisticsCollector" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_yFn9QIJCEeOSnasWRemx6Q" type="_xTUWkIJCEeOSnasWRemx6Q" direction="return">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yFn9QYJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_yFsOsIJCEeOSnasWRemx6Q" name="TaskStatistic">
+                    <eAnnotations xmi:id="_yFs1wIJCEeOSnasWRemx6Q" source="br.ufrn.spl.ev/src/br/ufrn/spl/ev/engines/conflicts/statistics/br.ufrn.spl.ev.engines.conflicts.statisticsClassDiagram.ucd"/>
+                    <ownedAttribute xmi:id="_yG4hgIJCEeOSnasWRemx6Q" name="description" visibility="private">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_yG5IkIJCEeOSnasWRemx6Q">
+                        <value xsi:nil="true"/>
+                      </defaultValue>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_yG-BEIJCEeOSnasWRemx6Q" name="directConflict" visibility="private">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_yG-oIIJCEeOSnasWRemx6Q" value="0"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_yG-oIYJCEeOSnasWRemx6Q" name="taskType" visibility="private">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_yG_PMIJCEeOSnasWRemx6Q">
+                        <value xsi:nil="true"/>
+                      </defaultValue>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_yHDgoIJCEeOSnasWRemx6Q" name="conflict" visibility="private">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_yHEHsIJCEeOSnasWRemx6Q">
+                        <value xsi:nil="true"/>
+                      </defaultValue>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_yHEHsYJCEeOSnasWRemx6Q" name="indirectConflict" visibility="private">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_yHEuwIJCEeOSnasWRemx6Q" value="0"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_yHEuwYJCEeOSnasWRemx6Q" name="textualConflict" visibility="private">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_yHFV0IJCEeOSnasWRemx6Q" value="0"/>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_yHFV0YJCEeOSnasWRemx6Q" name="taskNumber" visibility="private">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_yHF84IJCEeOSnasWRemx6Q">
+                        <value xsi:nil="true"/>
+                      </defaultValue>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:id="_yHJnQIJCEeOSnasWRemx6Q" name="version" visibility="private">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_yHKOUIJCEeOSnasWRemx6Q">
+                        <value xsi:nil="true"/>
+                      </defaultValue>
+                    </ownedAttribute>
+                    <ownedOperation xmi:id="_yHOfwIJCEeOSnasWRemx6Q" name="setConflict" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_yHPG0IJCEeOSnasWRemx6Q" name="conflict">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yHPG0YJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_yHPt4IJCEeOSnasWRemx6Q" name="setDirectConflict" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_yHQU8IJCEeOSnasWRemx6Q" name="directConflict">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yHQU8YJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_yHQU8oJCEeOSnasWRemx6Q" name="getTaskNumber" visibility="public" concurrency="concurrent"/>
+                    <ownedOperation xmi:id="_yHUmYIJCEeOSnasWRemx6Q" name="setDescription" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_yHaF8IJCEeOSnasWRemx6Q" name="description">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yHeXYIJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_yHeXYYJCEeOSnasWRemx6Q" name="getDirectConflict" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_yHe-cIJCEeOSnasWRemx6Q" direction="return">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yHe-cYJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_yHflgIJCEeOSnasWRemx6Q" name="getDescription" visibility="public" concurrency="concurrent"/>
+                    <ownedOperation xmi:id="_yHj28IJCEeOSnasWRemx6Q" name="setIndirectConflict" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_yHkeAIJCEeOSnasWRemx6Q" name="indirectConflict">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yHkeAYJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_yHkeAoJCEeOSnasWRemx6Q" name="getVersion" visibility="public" concurrency="concurrent"/>
+                    <ownedOperation xmi:id="_yHovcIJCEeOSnasWRemx6Q" name="TaskStatistic" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_yHrLsIJCEeOSnasWRemx6Q" name="changeLog" type="_wF9yoIJCEeOSnasWRemx6Q">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yHrywIJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_yHrywYJCEeOSnasWRemx6Q" name="setVersion" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_yHvdIIJCEeOSnasWRemx6Q" name="version">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yHzukIJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_yH0VoIJCEeOSnasWRemx6Q" name="getCSV" visibility="public" concurrency="concurrent"/>
+                    <ownedOperation xmi:id="_yH7qYIJCEeOSnasWRemx6Q" name="collectConflictsInformation" visibility="private" concurrency="concurrent">
+                      <ownedParameter xmi:id="_yH8RcIJCEeOSnasWRemx6Q" name="changeLog" type="_wF9yoIJCEeOSnasWRemx6Q">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yH8RcYJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_yH84gIJCEeOSnasWRemx6Q" name="setTaskNumber" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_yIBJ8IJCEeOSnasWRemx6Q" name="taskNumber">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yIFbYIJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_yIGCcIJCEeOSnasWRemx6Q" name="getTaskType" visibility="public" concurrency="concurrent"/>
+                    <ownedOperation xmi:id="_yIKT4IJCEeOSnasWRemx6Q" name="setTaskType" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_yIPMYIJCEeOSnasWRemx6Q" name="taskType">
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yIS2wIJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_yITd0IJCEeOSnasWRemx6Q" name="setTextualConflict" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_yIUE4IJCEeOSnasWRemx6Q" name="textualConflict">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yIUE4YJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_yIUr8IJCEeOSnasWRemx6Q" name="getTextualConflict" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_yIVTAIJCEeOSnasWRemx6Q" direction="return">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yIVTAYJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_yIV6EIJCEeOSnasWRemx6Q" name="getColumns" visibility="public" isStatic="true" concurrency="concurrent"/>
+                    <ownedOperation xmi:id="_yIZkcIJCEeOSnasWRemx6Q" name="getIndirectConflict" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_yIaLgIJCEeOSnasWRemx6Q" direction="return">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yIaykIJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_yIaykYJCEeOSnasWRemx6Q" name="isConflict" visibility="public" concurrency="concurrent">
+                      <ownedParameter xmi:id="_yIbZoIJCEeOSnasWRemx6Q" direction="return">
+                        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yIbZoYJCEeOSnasWRemx6Q" value="1"/>
+                      </ownedParameter>
+                    </ownedOperation>
+                  </packagedElement>
+                </packagedElement>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_iXDdgIJAEeOSnasWRemx6Q" name="miners">
+                <packagedElement xmi:type="uml:Package" xmi:id="_iXEEkIJAEeOSnasWRemx6Q" name="svn">
+                  <eAnnotations xmi:id="_iXEroYJAEeOSnasWRemx6Q" source="br.ufrn.spl.ev/src/br/ufrn/spl/ev/engines/conflicts/indirect/br.ufrn.spl.ev.engines.conflicts.indirectClassDiagram.ucd" references="_iXEroIJAEeOSnasWRemx6Q"/>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_iXEroIJAEeOSnasWRemx6Q" name="SVNConnector">
+                    <eAnnotations xmi:id="_iXErooJAEeOSnasWRemx6Q" source="br.ufrn.spl.ev/src/br/ufrn/spl/ev/engines/conflicts/indirect/br.ufrn.spl.ev.engines.conflicts.indirectClassDiagram.ucd"/>
+                  </packagedElement>
+                </packagedElement>
+              </packagedElement>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_iWomwIJAEeOSnasWRemx6Q" name="models">
+              <packagedElement xmi:type="uml:Package" xmi:id="_iWomwYJAEeOSnasWRemx6Q" name="changeloghistorymodel">
+                <eAnnotations xmi:id="_iWp04IJAEeOSnasWRemx6Q" source="br.ufrn.spl.ev/src/br/ufrn/spl/ev/engines/conflicts/indirect/br.ufrn.spl.ev.engines.conflicts.indirectClassDiagram.ucd" references="_iWpN0IJAEeOSnasWRemx6Q _iWs4MIJAEeOSnasWRemx6Q"/>
+                <eAnnotations xmi:id="_maT3kIJAEeOSnasWRemx6Q" source="br.ufrn.spl.ev/src/br/ufrn/spl/ev/engines/conflicts/direct/br.ufrn.spl.ev.engines.conflicts.directClassDiagram.ucd" references="_iWpN0IJAEeOSnasWRemx6Q"/>
+                <eAnnotations xmi:id="_rlaqgYJAEeOSnasWRemx6Q" source="br.ufrn.spl.ev/src/br/ufrn/spl/ev/engines/conflicts/textual/br.ufrn.spl.ev.engines.conflicts.textualClassDiagram.ucd" references="_iWpN0IJAEeOSnasWRemx6Q"/>
+                <eAnnotations xmi:id="_wF9yoYJCEeOSnasWRemx6Q" source="br.ufrn.spl.ev/src/br/ufrn/spl/ev/engines/conflicts/statistics/br.ufrn.spl.ev.engines.conflicts.statisticsClassDiagram.ucd" references="_wF9yoIJCEeOSnasWRemx6Q _wGFucIJCEeOSnasWRemx6Q _iWs4MIJAEeOSnasWRemx6Q _wGQGgIJCEeOSnasWRemx6Q _wGwc0IJCEeOSnasWRemx6Q _iWpN0IJAEeOSnasWRemx6Q"/>
+                <packagedElement xmi:type="uml:Class" xmi:id="_iWpN0IJAEeOSnasWRemx6Q" name="ChangeLogHistory">
+                  <eAnnotations xmi:id="_iWp04YJAEeOSnasWRemx6Q" source="br.ufrn.spl.ev/src/br/ufrn/spl/ev/engines/conflicts/indirect/br.ufrn.spl.ev.engines.conflicts.indirectClassDiagram.ucd"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_iWs4MIJAEeOSnasWRemx6Q" name="AssetChangeLog" isAbstract="true">
+                  <eAnnotations xmi:id="_iWs4MYJAEeOSnasWRemx6Q" source="br.ufrn.spl.ev/src/br/ufrn/spl/ev/engines/conflicts/indirect/br.ufrn.spl.ev.engines.conflicts.indirectClassDiagram.ucd"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_wF9yoIJCEeOSnasWRemx6Q" name="ChangeLog">
+                  <eAnnotations xmi:id="_wF9yooJCEeOSnasWRemx6Q" source="br.ufrn.spl.ev/src/br/ufrn/spl/ev/engines/conflicts/statistics/br.ufrn.spl.ev.engines.conflicts.statisticsClassDiagram.ucd"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_wGFucIJCEeOSnasWRemx6Q" name="ClassChangeLog">
+                  <eAnnotations xmi:id="_wGFucYJCEeOSnasWRemx6Q" source="br.ufrn.spl.ev/src/br/ufrn/spl/ev/engines/conflicts/statistics/br.ufrn.spl.ev.engines.conflicts.statisticsClassDiagram.ucd"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_wGQGgIJCEeOSnasWRemx6Q" name="MethodChangeLog">
+                  <eAnnotations xmi:id="_wGQtkIJCEeOSnasWRemx6Q" source="br.ufrn.spl.ev/src/br/ufrn/spl/ev/engines/conflicts/statistics/br.ufrn.spl.ev.engines.conflicts.statisticsClassDiagram.ucd"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_wGwc0IJCEeOSnasWRemx6Q" name="FieldChangeLog">
+                  <eAnnotations xmi:id="_wGxD4IJCEeOSnasWRemx6Q" source="br.ufrn.spl.ev/src/br/ufrn/spl/ev/engines/conflicts/statistics/br.ufrn.spl.ev.engines.conflicts.statisticsClassDiagram.ucd"/>
+                </packagedElement>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_maVFsIJAEeOSnasWRemx6Q" name="conflictmodel">
+                <eAnnotations xmi:id="_maVswYJAEeOSnasWRemx6Q" source="br.ufrn.spl.ev/src/br/ufrn/spl/ev/engines/conflicts/direct/br.ufrn.spl.ev.engines.conflicts.directClassDiagram.ucd" references="_maVswIJAEeOSnasWRemx6Q"/>
+                <packagedElement xmi:type="uml:Class" xmi:id="_maVswIJAEeOSnasWRemx6Q" name="ProductLineConflictModel">
+                  <eAnnotations xmi:id="_maVswoJAEeOSnasWRemx6Q" source="br.ufrn.spl.ev/src/br/ufrn/spl/ev/engines/conflicts/direct/br.ufrn.spl.ev.engines.conflicts.directClassDiagram.ucd"/>
+                </packagedElement>
+              </packagedElement>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_iW7hsIJAEeOSnasWRemx6Q" name="exceptions">
+              <eAnnotations xmi:id="_iW8v0YJAEeOSnasWRemx6Q" source="br.ufrn.spl.ev/src/br/ufrn/spl/ev/engines/conflicts/indirect/br.ufrn.spl.ev.engines.conflicts.indirectClassDiagram.ucd" references="_iW8v0IJAEeOSnasWRemx6Q"/>
+              <eAnnotations xmi:id="_rlfjAIJAEeOSnasWRemx6Q" source="br.ufrn.spl.ev/src/br/ufrn/spl/ev/engines/conflicts/textual/br.ufrn.spl.ev.engines.conflicts.textualClassDiagram.ucd" references="_iW8v0IJAEeOSnasWRemx6Q"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_iW8v0IJAEeOSnasWRemx6Q" name="IndirectConflictsDetectionException">
+                <eAnnotations xmi:id="_iW8v0oJAEeOSnasWRemx6Q" source="br.ufrn.spl.ev/src/br/ufrn/spl/ev/engines/conflicts/indirect/br.ufrn.spl.ev.engines.conflicts.indirectClassDiagram.ucd"/>
+              </packagedElement>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_iWh5EIJAEeOSnasWRemx6Q" name="org">
+      <packagedElement xmi:type="uml:Package" xmi:id="_iWh5EYJAEeOSnasWRemx6Q" name="eclipse">
+        <packagedElement xmi:type="uml:Package" xmi:id="_iWigIIJAEeOSnasWRemx6Q" name="jdt">
+          <packagedElement xmi:type="uml:Package" xmi:id="_iWigIYJAEeOSnasWRemx6Q" name="core">
+            <eAnnotations xmi:id="_iWmxkIJAEeOSnasWRemx6Q" source="br.ufrn.spl.ev/src/br/ufrn/spl/ev/engines/conflicts/indirect/br.ufrn.spl.ev.engines.conflicts.indirectClassDiagram.ucd" references="_iWmKgIJAEeOSnasWRemx6Q"/>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_iWmKgIJAEeOSnasWRemx6Q" name="IJavaProject" isAbstract="true">
+              <eAnnotations xmi:id="_iWmxkYJAEeOSnasWRemx6Q" source="br.ufrn.spl.ev/src/br/ufrn/spl/ev/engines/conflicts/indirect/br.ufrn.spl.ev.engines.conflicts.indirectClassDiagram.ucd"/>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_fvmTEIJAEeOSnasWRemx6Q">
+      <eAnnotations xmi:id="_fvoIQIJAEeOSnasWRemx6Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Service_3.2_SN.profile.uml#_6VpgcCK5EdujMN-Mf6X4Bw"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Service_3.2_SN.profile.uml#_RgMRQCK2Edu07u_JJk0LDQ"/>
+    </profileApplication>
+    <profileApplication xmi:id="_fvtAwIJAEeOSnasWRemx6Q">
+      <eAnnotations xmi:id="_fvtAwYJAEeOSnasWRemx6Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Meta.profile.uml#_kycnUIE4EduiecUdqhZMrw"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Meta.profile.uml#_EJn30IE0EduiecUdqhZMrw"/>
+    </profileApplication>
+    <profileApplication xmi:id="_fvtn0IJAEeOSnasWRemx6Q">
+      <eAnnotations xmi:id="_fvtn0YJAEeOSnasWRemx6Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Presentation_3.2_SN.profile.uml#_4Um1wCK5EdujMN-Mf6X4Bw"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Presentation_3.2_SN.profile.uml#_RgVcjiK2Edu07u_JJk0LDQ"/>
+    </profileApplication>
+    <profileApplication xmi:id="_fvtn0oJAEeOSnasWRemx6Q">
+      <eAnnotations xmi:id="_fvuO4IJAEeOSnasWRemx6Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Java.profile.uml#_aZhLlH6MEdmbwasWWc4yvw"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Java.profile.uml#_aZhLkH6MEdmbwasWWc4yvw"/>
+    </profileApplication>
+    <profileApplication xmi:id="_fvuO4YJAEeOSnasWRemx6Q">
+      <eAnnotations xmi:id="_fvuO4oJAEeOSnasWRemx6Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Meta_3.2_SN.profile.uml#_7sFH4CK5EdujMN-Mf6X4Bw"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Meta_3.2_SN.profile.uml#_RgVcYiK2Edu07u_JJk0LDQ"/>
+    </profileApplication>
+    <profileApplication xmi:id="_fvu18IJAEeOSnasWRemx6Q">
+      <eAnnotations xmi:id="_fvu18YJAEeOSnasWRemx6Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Deployment.profile.uml#_gPzkoXlkEdyC2_BXA89-Eg"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Deployment.profile.uml#_69q0IGkDEd2C2vBXA89-Eg"/>
+    </profileApplication>
+    <profileApplication xmi:id="_fvwrIIJAEeOSnasWRemx6Q">
+      <eAnnotations xmi:id="_fvxSMIJAEeOSnasWRemx6Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/org.eclipse.uml2.uml.resources/profiles/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/org.eclipse.uml2.uml.resources/profiles/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_fvxSMYJAEeOSnasWRemx6Q">
+      <eAnnotations xmi:id="_fvxSMoJAEeOSnasWRemx6Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Omondo.profile.uml#_zrN_1iUoEdmNXYQzyImvfA"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Omondo.profile.uml#_zrN_0iUoEdmNXYQzyImvfA"/>
+    </profileApplication>
+    <profileApplication xmi:id="_fvx5QIJAEeOSnasWRemx6Q">
+      <eAnnotations xmi:id="_fvx5QYJAEeOSnasWRemx6Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Archetype.profile.uml#_f6v3QOROEduiB7qvAtFfTA"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Archetype.profile.uml#_j-cLoORNEduiB7qvAtFfTA"/>
+    </profileApplication>
+    <profileApplication xmi:id="_fvx5QoJAEeOSnasWRemx6Q">
+      <eAnnotations xmi:id="_fvygUIJAEeOSnasWRemx6Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Persistence_3.2_SN.profile.uml#_AevloCK6EdujMN-Mf6X4Bw"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Persistence_3.2_SN.profile.uml#_RgVfdiK2Edu07u_JJk0LDQ"/>
+    </profileApplication>
+    <profileApplication xmi:id="_fvygUYJAEeOSnasWRemx6Q">
+      <eAnnotations xmi:id="_fvzHYIJAEeOSnasWRemx6Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Xml_3.2_SN.profile.uml#_7JNEVSK5EdujMN-Mf6X4Bw"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Xml_3.2_SN.profile.uml#_RgVfXCK2Edu07u_JJk0LDQ"/>
+    </profileApplication>
+    <profileApplication xmi:id="_fvzHYYJAEeOSnasWRemx6Q">
+      <eAnnotations xmi:id="_fvzHYoJAEeOSnasWRemx6Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Process_3.2_SN.profile.uml#_7D2DMCK5EdujMN-Mf6X4Bw"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Process_3.2_SN.profile.uml#_RgfOnSK2Edu07u_JJk0LDQ"/>
+    </profileApplication>
+    <profileApplication xmi:id="_fvzucIJAEeOSnasWRemx6Q">
+      <eAnnotations xmi:id="_fvzucYJAEeOSnasWRemx6Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Common_3.2_SN.profile.uml#_7hMtlSK5EdujMN-Mf6X4Bw"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Common_3.2_SN.profile.uml#_RgfPHCK2Edu07u_JJk0LDQ"/>
+    </profileApplication>
+    <profileApplication xmi:id="_fvzucoJAEeOSnasWRemx6Q">
+      <eAnnotations xmi:id="_fv0VgIJAEeOSnasWRemx6Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Webservice_3.2_SN.profile.uml#_6jgWRSK5EdujMN-Mf6X4Bw"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/com.omondo.uml.core/profiles/Omondo_Webservice_3.2_SN.profile.uml#_RgVmWCK2Edu07u_JJk0LDQ"/>
+    </profileApplication>
+    <profileApplication xmi:id="_fv0VgYJAEeOSnasWRemx6Q">
+      <eAnnotations xmi:id="_fv0VgoJAEeOSnasWRemx6Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/org.eclipse.uml2.uml.resources/profiles/UML2.profile.uml#_f9NXwJIyEd2ymsRPCrfQAQ"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/org.eclipse.uml2.uml.resources/profiles/UML2.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <JavaProfile_1:JavaProfile__MultidimensionalArray xmi:id="_ib5hQIJAEeOSnasWRemx6Q" base_Operation="_ibwXUIJAEeOSnasWRemx6Q" dimension="1"/>
+</xmi:XMI>

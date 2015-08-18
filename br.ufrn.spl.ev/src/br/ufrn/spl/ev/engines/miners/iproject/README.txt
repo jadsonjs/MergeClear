@@ -1,0 +1,1 @@
+Contain the class to the IPROJECt system Miner

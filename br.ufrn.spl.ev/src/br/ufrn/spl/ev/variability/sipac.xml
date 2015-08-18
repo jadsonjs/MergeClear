@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<variabilities>
+	
+	<description>Arquivo de variabilidades do SIPAC até a versão 4.7</description>
+	<system>sipac</system>
+	
+	<!--  Variabilidades de Almoxarifado -->
+	
+	<variability>
+	    
+	    <id>var-alm-01</id>
+		<description>Variabilidade de Habilitaçaõ de Funcionalidades</description>
+		<module>almoxarifado</module>
+		<type>condExecution</type>
+		
+		<variationPoint>br.ufrn.sipac.parametro.dominio.ParametrosAlmoxarifado#PERMITIR_LISTAR_TODOS_OS_MATERIAIS</variationPoint>
+	
+		<variants>
+			<description>Habilita</description>
+			<value>true</value>
+		</variants>
+		<variants>
+			<description>Desabilita</description>
+			<value>false</value>
+		</variants>
+	
+	</variability>
+	
+	<variability>
+	    
+	    <id>var-alm-02</id>
+		<description>Variabilidade de Habilitaçaõ de Funcionalidades</description>
+		<module>almoxarifado</module>
+		<type>condExecution</type>
+		
+		<variationPoint>br.ufrn.sipac.parametro.dominio.ParametrosAlmoxarifado#PERMITE_CRUD_TIPO_SAIDA_AVULSA</variationPoint>
+	
+		<variants>
+			<description>Habilita</description>
+			<value>true</value>
+		</variants>
+		<variants>
+			<description>Desabilita</description>
+			<value>false</value>
+		</variants>
+	
+	</variability>
+	
+	
+	<!--  Variabilidades de Contratos -->
+	
+	<variability>
+	    
+	    <id>var-cont-01</id>
+		<description>Irá restringir o atendimento de requisições por unidades gestoras, ou seja, caso esse parâmetro seja true irá considerar a hierarquia da unidade</description>
+		<module>contratos</module>
+		<type>condExecution</type>
+		
+		<variationPoint>br.ufrn.sipac.parametro.dominio.ParametrosContratos#RESTRINGE_ATENDIMENTO_REQUISICOES_CONTRATOS_POR_UG</variationPoint>
+		
+		<variants>
+			<description>Habilita Criação</description>
+			<value>true</value>
+		</variants>
+		<variants>
+			<description>Desabilita criação</description>
+			<value>false</value>
+		</variants>
+	
+	</variability>
+	
+	<variability>
+	    
+	    <id>var-cont-02</id>
+		<description>Variabilidade de Habilitaçaõ de Funcionalidades</description>
+		<module>contratos</module>
+		<type>condExecution</type>
+		
+		<variationPoint>br.ufrn.sipac.parametro.dominio.ParametrosContratos#DESABILITAR_CADASTRO_ACADEMICO</variationPoint>
+	
+		<variants>
+			<description>Habilita</description>
+			<value>true</value>
+		</variants>
+		<variants>
+			<description>Desabilita</description>
+			<value>false</value>
+		</variants>
+	
+	</variability>
+	
+	<variability>
+	    
+	    <id>var-cont-03</id>
+		<description>Variabilidade de Habilitaçaõ de Funcionalidades</description>
+		<module>contratos</module>
+		<type>condExecution</type>
+		
+		<variationPoint>br.ufrn.sipac.parametro.dominio.ParametrosContratos#PERMITE_EDITAR_OCORRENCIAS_CONTRATO</variationPoint>
+	
+		<variants>
+			<description>Habilita</description>
+			<value>true</value>
+		</variants>
+		<variants>
+			<description>Desabilita</description>
+			<value>false</value>
+		</variants>
+	
+	</variability>
+	
+	
+	<variability>
+	    
+	    <id>var-cont-04</id>
+		<description>Variabilidade de Habilitaçaõ de Funcionalidades</description>
+		<module>contratos</module>
+		<type>condExecution</type>
+		
+		<variationPoint>br.ufrn.sipac.parametro.dominio.ParametrosContratos#PERMITE_FISCAL_VISUALIZAR_TUDO_CONTRATO</variationPoint>
+	
+		<variants>
+			<description>Habilita</description>
+			<value>true</value>
+		</variants>
+		<variants>
+			<description>Desabilita</description>
+			<value>false</value>
+		</variants>
+	
+	</variability>
+	
+	<!--  Variabilidades de Patrimônio -->
+	
+	<variability>
+	    
+	    <id>var-pat-01</id>
+		<description>Estratégia de Geração de Número de Tombos</description>
+		<module>patrimonio</module>
+		<type>plugin</type>
+		<sybtype>strategy</sybtype>
+
+		<variationPoint>br.ufrn.sipac.patrimonio.tombamento.negocio.EstrategiaGeracaoTombo</variationPoint>
+		
+		<variants>
+			<description>Geração de números sequenciais</description>
+			<value>br.ufrn.sipac.spatrimonio.tombamento.negocio.GeracaoTomboSequencial</value>
+		</variants>
+		
+		<variants>
+			<description>Geração de números sequencias por ano</description>
+			<value>br.ufrn.sipac.patrimonio.tombamento.negocio.GeracaoTomboSequencialAno</value>
+		</variants>
+		
+		<variants>
+			<description>Geração de números sequenciais por Unidade Gestora</description>
+			<value>br.ufrn.sipac.patrimonio.tombamento.negocio.GeracaoTomboSequencialAnoUG</value>
+		</variants>
+
+	</variability>
+
+	<variability>
+		
+	    <id>var-pat-02</id>
+		<description>Modelo de guia de movimentação de bens</description>
+		<module>patrimonio</module>
+		<type>condExecution</type>
+		
+		<variationPoint>br.ufrn.sipac.parametro.dominio.ParametrosPatrimonio#MODELO_GUIA_MOVIMENTACAO</variationPoint>
+		
+		<variants>
+			<description>Para o modelo sem localidades vinculadas</description>
+			<value>1</value>
+		</variants>
+		<variants>
+			<description>O modelo que aparece informações com localidade.</description>
+			<value>2</value>
+		</variants>
+		
+	</variability>
+	
+	<variability>
+	    
+	    <id>var-pat-03</id>
+		<description>Modelo de guia de documentos de tombamento</description>
+		<module>patrimonio</module>
+		<type>condExecution</type>
+		
+		<variationPoint>br.ufrn.sipac.parametro.dominio.ParametrosPatrimonio#TIPO_DOCUMENTO_TERMO_TOMBAMENTO</variationPoint>
+		
+		<variants>
+			<description>O documento será Termo de Responsabilidade</description>
+			<value>1</value>
+		</variants>
+		<variants>
+			<description>o documento Termo de Transferência</description>
+			<value>2</value>
+		</variants>
+	
+	</variability>
+	
+	<variability>
+	    
+	    <id>var-pat-04</id>
+		<description>Variabilidade de Habilitaçaõ de Funcionalidades</description>
+		<module>patrimonio</module>
+		<type>condExecution</type>
+		
+		<variationPoint>br.ufrn.sipac.parametro.dominio.ParametrosPatrimonio#PERMITE_ACESSAR_TOMBAMENTO_FUNDACAO</variationPoint>
+	
+		<variants>
+			<description>Habilita</description>
+			<value>true</value>
+		</variants>
+		<variants>
+			<description>Desabilita</description>
+			<value>false</value>
+		</variants>
+	
+	</variability>
+	
+	<variability>
+	    
+	    <id>var-pat-05</id>
+		<description>Variabilidade de Habilitaçaõ de Funcionalidades</description>
+		<module>patrimonio</module>
+		<type>condExecution</type>
+		
+		<variationPoint>br.ufrn.sipac.parametro.dominio.ParametrosPatrimonio#PERMITE_OPERACOES_PATRIMONIO_POR_LOCALIDADE</variationPoint>
+	
+		<variants>
+			<description>Habilita</description>
+			<value>true</value>
+		</variants>
+		<variants>
+			<description>Desabilita</description>
+			<value>false</value>
+		</variants>
+	
+	</variability>
+
+	<variability>
+	    
+	    <id>var-pat-06</id>
+		<description>Variabilidade de Habilitaçaõ de Funcionalidades</description>
+		<module>patrimonio</module>
+		<type>condExecution</type>
+		
+		<variationPoint>br.ufrn.sipac.parametro.dominio.ParametrosPatrimonio#VALIDA_TRANSFERENCIA_BENS</variationPoint>
+	
+		<variants>
+			<description>Habilita</description>
+			<value>true</value>
+		</variants>
+		<variants>
+			<description>Desabilita</description>
+			<value>false</value>
+		</variants>
+	
+	</variability>
+	
+	<variability>
+	    
+	    <id>var-pat-07</id>
+		<description>Variabilidade de Habilitaçaõ de Funcionalidades</description>
+		<module>patrimonio</module>
+		<type>condExecution</type>
+		
+		<variationPoint>br.ufrn.sipac.parametro.dominio.ParametrosPatrimonio#PERMITE_TOMBAMENTO_NOTA_FISCAL</variationPoint>
+	
+		<variants>
+			<description>Habilita</description>
+			<value>true</value>
+		</variants>
+		<variants>
+			<description>Desabilita</description>
+			<value>false</value>
+		</variants>
+	
+	</variability>
+	
+	<variability>
+	    
+	    <id>var-pat-08</id>
+		<description>Variabilidade de Habilitaçaõ de Funcionalidades</description>
+		<module>patrimonio</module>
+		<type>condExecution</type>
+		
+		<variationPoint>br.ufrn.sipac.parametro.dominio.ParametrosPatrimonio#PERMITE_EDITAR_VIDA_UTIL_VALOR_RESIDUAL_BEM</variationPoint>
+	
+		<variants>
+			<description>Habilita</description>
+			<value>true</value>
+		</variants>
+		<variants>
+			<description>Desabilita</description>
+			<value>false</value>
+		</variants>
+	
+	</variability>
+	
+	<!--  Variabilidades de Protocolo -->
+	
+	<variability>
+	    
+	    <id>var-prot-01</id>
+		<description>Variabilidade de Habilitação de Funcionalidades</description>
+		<module>protocolo</module>
+		<type>condExecution</type>
+		
+		<variationPoint>br.ufrn.sipac.parametro.dominio.ParametrosProtocolo#PERMITE_IMPRIMIR_ETIQUETAS_PROTOCOLO</variationPoint>
+	
+		<variants>
+			<description>Habilita</description>
+			<value>true</value>
+		</variants>
+		<variants>
+			<description>Desabilita</description>
+			<value>false</value>
+		</variants>
+	
+	</variability>
+	
+	<variability>
+	    
+	    <id>var-prot-02</id>
+		<description>Variabilidade de Habilitação de Funcionalidades</description>
+		<module>protocolo</module>
+		<type>condExecution</type>
+		
+		<variationPoint>br.ufrn.sipac.parametro.dominio.ParametrosProtocolo#UTILIZA_TIPO_PROCESSO</variationPoint>
+	
+		<variants>
+			<description>Habilita</description>
+			<value>true</value>
+		</variants>
+		<variants>
+			<description>Desabilita</description>
+			<value>false</value>
+		</variants>
+	
+	</variability>
+	
+	<variability>
+	    
+	    <id>var-prot-03</id>
+		<description>Variabilidade de Habilitação de Funcionalidades</description>
+		<module>protocolo</module>
+		<type>condExecution</type>
+		
+		<variationPoint>br.ufrn.sipac.parametro.dominio.ParametrosProtocolo#UTILIZA_CLASSIFICACAO_CONARQ</variationPoint>
+	
+		<variants>
+			<description>Habilita</description>
+			<value>true</value>
+		</variants>
+		<variants>
+			<description>Desabilita</description>
+			<value>false</value>
+		</variants>
+	
+	</variability>
+	
+	<variability>
+	    
+	    <id>var-prot-04</id>
+		<description>Variabilidade de Habilitação de Funcionalidades</description>
+		<module>protocolo</module>
+		<type>condExecution</type>
+		
+		<variationPoint>br.ufrn.sipac.parametro.dominio.ParametrosProtocolo#PERMITE_ALTERAR_PROCESSOS_TRAMITADOS</variationPoint>
+	
+		<variants>
+			<description>Habilita</description>
+			<value>true</value>
+		</variants>
+		<variants>
+			<description>Desabilita</description>
+			<value>false</value>
+		</variants>
+	
+	</variability>
+	
+	<!--  Requisições -->
+	
+	<variability>
+	    
+	    <id>var-req-01</id>
+		<description>Variabilidade de Habilitação de Funcionalidades</description>
+		<module>requisicoes</module>
+		<type>condExecution</type>
+		
+		<variationPoint>br.ufrn.sipac.parametro.dominio.ParametrosRequisicoes#BLOQUEIO_REQUISICOES_TICKET_PASSAGEM</variationPoint>
+	
+		<variants>
+			<description>Habilita</description>
+			<value>true</value>
+		</variants>
+		<variants>
+			<description>Desabilita</description>
+			<value>false</value>
+		</variants>
+	
+	</variability>
+	
+	<variability>
+	    
+	    <id>var-req-01</id>
+		<description>Cadeia de processamento de bloqueios de requisições</description>
+		<module>requisicoes</module>
+		<type>plugin</type>
+		<subtype>chain of responsability</subtype>
+		
+		<variationPoint>br.ufrn.sipac.requisicoes.bloqueio.dominio.ExecutorBloqueio</variationPoint>
+		
+		<variants>
+			<description>Bloquear por Bens não recebidos</description>
+			<value>br.ufrn.sipac.requisicoes.bloqueio.dominio.BloqueioBem</value>
+		</variants>
+		
+		<variants>
+			<description>Bloquear por frequência de bolsas não enviadas</description>
+			<value>br.ufrn.sipac.requisicoes.bloqueio.dominio.BloqueioBolsas</value>
+		</variants>
+		
+		<variants>
+			<description>Bloquear por fichas de ateste não enviadas de contratos</description>
+			<value>br.ufrn.sipac.requisicoes.bloqueio.dominio.BloqueioContrato</value>
+		</variants>
+		
+		<variants>
+			<description>Bloquear por frequência mensal não enviada</description>
+			<value>br.ufrn.sipac.requisicoes.bloqueio.dominio.BloqueioFrequenciaServidor</value>
+		</variants>
+		
+		<variants>
+			<description>Bloquear por projetos pendentes de autorização</description>
+			<value>br.ufrn.sipac.requisicoes.bloqueio.dominio.BloqueioProjetos</value>
+		</variants>
+		
+		<variants>
+			<description>Bloquear por processos não recebidos</description>
+			<value>br.ufrn.sipac.requisicoes.bloqueio.dominio.BloqueioProtocolo</value>
+		</variants>
+		
+		<variants>
+			<description>Bloquear por processos não recebidos</description>
+			<value>br.ufrn.sipac.requisicoes.bloqueio.dominio.BloqueioProtocolo</value>
+		</variants>
+		
+		<variants>
+			<description>Bloquear por falta de prestação de contas de viagens</description>
+			<value>br.ufrn.sipac.requisicoes.bloqueio.dominio.BloqueioRequisicaoViagem</value>
+		</variants>
+				
+	</variability>
+	
+	<!--  Faturas -->
+	
+	<variability>
+	    
+	    <id>var-fat-01</id>
+		<description>Estratégia para leitura de arquivo de faturas de operadoras de telefonia</description>
+		<module>contratos</module>
+		<type>plugin</type>
+		<subtype>strategy</subtype>
+		
+		<variationPoint>br.ufrn.sipac.faturas.telefones.negocio.EstrategiaLeituraArquivoTelefonia</variationPoint>
+		
+		<variants>
+			<description>Embratel</description>
+			<value>br.ufrn.sipac.faturas.telefones.negocio.LeituraArquivoTelefoniaFixaEmbratel</value>
+		</variants>
+		
+		<variants>
+			<description>Padrão FEBRABAN</description>
+			<value>br.ufrn.sipac.faturas.telefones.negocio.LeituraArquivoTelefoniaFixaFebraban</value>
+		</variants>
+		
+		<variants>
+			<description>Claro - Móvel</description>
+			<value>br.ufrn.sipac.faturas.telefones.negocio.LeituraArquivoTelefoniaMovelClaro</value>
+		</variants>
+	
+	</variability>
+		
+	
+	
+	<!--  Transportes -->
+	
+	<variability>
+	    
+	    <id>var-transp-01</id>
+		<description>Fábrica de leitores de arquivos de abastecimento</description>
+		<module>transportes</module>
+		<type>plugin</type>
+		<subtype>factory</subtype>
+		
+		<variationPoint>br.ufrn.sipac.transportes.dominio.ArquivoAbastecimentoInterface</variationPoint>
+		
+		<variants>
+			<description>Arquivo usado no UFRN</description>
+			<value>br.ufrn.sipac.faturas.telefones.negocio.ArquivoAbastecimentoUFRN</value>
+		</variants>
+	
+	</variability>
+	
+	
+</variabilities>

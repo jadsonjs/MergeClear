@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+encoding//src/br/ufrn/spl/ev/PluginConstants.java=UTF-8
+encoding//src/br/ufrn/spl/ev/engines/connectors/RepositoryConnector.java=UTF-8
+encoding//src/br/ufrn/spl/ev/engines/connectors/git/GitConnector.java=UTF-8
+encoding//src/br/ufrn/spl/ev/engines/connectors/svn/SVNConnector.java=UTF-8
+encoding//src/br/ufrn/spl/ev/engines/miners/github/GithubConnector.java=ISO-8859-1
+encoding//src/br/ufrn/spl/ev/engines/miners/github/GithubMiner.java=ISO-8859-1
+encoding//src/br/ufrn/spl/ev/engines/miners/redmine/RedmineMiner.java=ISO-8859-1
+encoding//src/br/ufrn/spl/ev/engines/miners/repository/RepositoryAnalisisExecutor.java=UTF-8
+encoding//src/br/ufrn/spl/ev/engines/safeevolution/templates/librarymodule/AddNewOptionalFeatureLibraryModule.java=UTF-8
+encoding//src/br/ufrn/spl/ev/gui/handlers/ExecuteEvolutionEngineHandle.java=UTF-8

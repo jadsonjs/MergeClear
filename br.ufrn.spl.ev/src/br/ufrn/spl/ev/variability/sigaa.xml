@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<variabilities>
+	
+	<description>Arquivo de variabilidades do SIGAA</description>
+	<system>sigaa</system>
+
+	<variability>
+	    
+	    <id>sigaa-base-01</id>
+		<description>Chain of responsability para processamento de vinculos</description>
+		<module>sigaa-base</module>
+		<type>plugin</type>
+		<subtype>chain of responsability</subtype>
+
+		<variationPoint>br.ufrn.sigaa.arq.vinculo.processamento.EstrategiaPopularVinculo</variationPoint>
+		
+		<variants>
+			<description>Estagio</description>
+			<value>br.ufrn.sigaa.arq.vinculo.processamento.EstrategiaPopularVinculoConcedenteEstagio</value>
+		</variants>
+		
+		<variants>
+			<description></description>
+			<value>br.ufrn.sigaa.arq.vinculo.processamento.EstrategiaPopularVinculoCoordenacaoGeralRede</value>
+		</variants>
+		
+		<variants>
+			<description></description>
+			<value>br.ufrn.sigaa.arq.vinculo.processamento.EstrategiaPopularVinculoCoordenadorPolo</value>
+		</variants>
+		
+		<variants>
+			<description></description>
+			<value>br.ufrn.sigaa.arq.vinculo.processamento.EstrategiaPopularVinculoDocenteExterno</value>
+		</variants>
+		
+		<variants>
+			<description></description>
+			<value>br.ufrn.sigaa.arq.vinculo.processamento.EstrategiaPopularVinculoFamiliar</value>
+		</variants>
+		
+		<variants>
+			<description></description>
+			<value>br.ufrn.sigaa.arq.vinculo.processamento.EstrategiaPopularVinculoGenerico</value>
+		</variants>
+		
+		<variants>
+			<description></description>
+			<value>br.ufrn.sigaa.arq.vinculo.processamento.EstrategiaPopularVinculoResponsavel</value>
+		</variants>
+		
+		<variants>
+			<description></description>
+			<value>br.ufrn.sigaa.arq.vinculo.processamento.EstrategiaPopularVinculoSecretaria</value>
+		</variants>
+		
+		<variants>
+			<description></description>
+			<value>br.ufrn.sigaa.arq.vinculo.processamento.EstrategiaPopularVinculoServidor</value>
+		</variants>
+		
+		<variants>
+			<description></description>
+			<value>br.ufrn.sigaa.arq.vinculo.processamento.EstrategiaPopularVinculoTutor</value>
+		</variants>
+		
+	</variability>
+	
+	<variability>
+	    
+	    <id>sigaa-ensino-01</id>
+		<description>Estratégia para geração de matrículas de alunos</description>
+		<module>ensino</module>
+		<type>plugin</type>
+		<subtype>strategy</subtype>
+
+		<variationPoint>br.ufrn.sigaa.ensino.negocio.geracao_matricula.EstrategiaComposicaoMatricula</variationPoint>
+		
+		<variants>
+			<description>Por ano e nível</description>
+			<value>br.ufrn.sigaa.ensino.negocio.geracao_matricula.ComposicaoMatriculaPorAnoNivel</value>
+		</variants>
+		
+		<variants>
+			<description>Por ano/periodo</description>
+			<value>br.ufrn.sigaa.ensino.negocio.geracao_matricula.ComposicaoMatriculaPorAnoPeriodo</value>
+		</variants>
+
+	</variability>
+	
+	<variability>
+	    
+	    <id>sigaa-ensino-02</id>
+		<description>Estratégia para a consolidação de turmas</description>
+		<module>ensino</module>
+		<type>plugin</type>
+		<subtype>strategy</subtype>
+
+		<variationPoint>br.ufrn.sigaa.ensino.negocio.consolidacao.EstrategiaConsolidacao</variationPoint>
+		<variationPoint>br.ufrn.sigaa.ensino.negocio.consolidacao.EstrategiaConsolidacaoFactory</variationPoint>
+		
+		<variants>
+			<description>Consolidação por competência - ensino infantil</description>
+			<value>br.ufrn.sigaa.ensino.negocio.consolidacao.ConsolidacaoCompetencia</value>
+		</variants>
+		
+		<variants>
+			<description>Consolidação EAD</description>
+			<value>br.ufrn.sigaa.ensino.negocio.consolidacao.ConsolidacaoEad</value>
+		</variants>
+		
+		<variants>
+			<description>Consolidação Graduação</description>
+			<value>br.ufrn.sigaa.ensino.negocio.consolidacao.ConsolidacaoGraduacao</value>
+		</variants>
+		
+		<variants>
+			<description>Consolidação Lato</description>
+			<value>br.ufrn.sigaa.ensino.negocio.consolidacao.ConsolidacaoLato</value>
+		</variants>
+		
+		<variants>
+			<description>Consolidação Ensino Médio</description>
+			<value>br.ufrn.sigaa.ensino.negocio.consolidacao.ConsolidacaoMedio</value>
+		</variants>
+		
+		<variants>
+			<description>Consolidação IMD</description>
+			<value>br.ufrn.sigaa.ensino.negocio.consolidacao.ConsolidacaoMetropoleDigital</value>
+		</variants>
+		
+		<variants>
+			<description>Consolidação Escola de Música - UFRN</description>
+			<value>br.ufrn.sigaa.ensino.negocio.consolidacao.ConsolidacaoMusica</value>
+		</variants>
+		
+		<variants>
+			<description>Consolidação Residência em Saúde</description>
+			<value>br.ufrn.sigaa.ensino.negocio.consolidacao.ConsolidacaoResidencia</value>
+		</variants>
+		
+		<variants>
+			<description>Consolidação Strictu Sensu</description>
+			<value>br.ufrn.sigaa.ensino.negocio.consolidacao.ConsolidacaoStricto</value>
+		</variants>
+
+	</variability>
+	
+	<variability>
+	    
+	    <id>sigaa-ensino-03</id>
+		<description>Estratégia para calculo dos prazos máximos de cursos</description>
+		<module>ensino</module>
+		<type>plugin</type>
+		<subtype>strategy</subtype>
+
+		<variationPoint>br.ufrn.sigaa.ensino.graduacao.negocio.calculos.CalculoPrazoMaximo</variationPoint>
+	
+		<variants>
+			<description>Forma regida pela resoluçaõ anterior a RESOLUÇÃO No 227/2009-CONSEPE</description>
+			<value>br.ufrn.sigaa.ensino.graduacao.negocio.calculos.CalculoPrazoMaximoGraduacaoAntigo</value>
+		</variants>
+		
+		<variants>
+			<description>Conforme RESOLUÇÃO 227/2009-CONSEPE</description>
+			<value>br.ufrn.sigaa.ensino.graduacao.negocio.calculos.CalculoPrazoMaximoGraduacaoNovoRegulamento</value>
+		</variants>
+		
+		<variants>
+			<description>Prazos máximos de stricto sensu</description>
+			<value>br.ufrn.sigaa.ensino.graduacao.negocio.calculos.CalculoPrazoMaximoStricto</value>
+		</variants>
+		
+
+	</variability>
+	
+	
+	<variability>
+	    
+	    <id>sigaa-grad-01</id>
+		<description>Calculo dos indices acadêmicos de discentes</description>
+		<module>graduacao</module>
+		<type>plugin</type>
+		<subtype>chain of responsability</subtype>
+
+		<variationPoint>br.ufrn.sigaa.ensino.negocio.CalculoIndiceAcademico</variationPoint>
+		<variationPoint>br.ufrn.sigaa.ensino.negocio.AtualizarIndicesDiscente</variationPoint>
+		
+		<variants>
+			<description>IEA</description>
+			<value>br.ufrn.sigaa.ensino.graduacao.negocio.indices.CalculoIEA</value>
+		</variants>
+		
+		<variants>
+			<description>IEAN</description>
+			<value>br.ufrn.sigaa.ensino.graduacao.negocio.indices.CalculoIEAN</value>
+		</variants>
+		
+		<variants>
+			<description>IECH</description>
+			<value>br.ufrn.sigaa.ensino.graduacao.negocio.indices.CalculoIECH</value>
+		</variants>
+		
+		<variants>
+			<description>IEPL</description>
+			<value>br.ufrn.sigaa.ensino.graduacao.negocio.indices.CalculoIEPL</value>
+		</variants>
+		
+		<variants>
+			<description>IRA</description>
+			<value>br.ufrn.sigaa.ensino.graduacao.negocio.indices.CalculoIRA</value>
+		</variants>
+		
+		<variants>
+			<description>MC</description>
+			<value>br.ufrn.sigaa.ensino.graduacao.negocio.indices.CalculoMC</value>
+		</variants>
+		
+		<variants>
+			<description>MCN</description>
+			<value>br.ufrn.sigaa.ensino.graduacao.negocio.indices.CalculoMCN</value>
+		</variants>
+
+	</variability>
+	
+	
+	<variability>
+	    
+	    <id>sigaa-grad-02</id>
+		<description>Calculo do perfil inicial de estudantes de graduação</description>
+		<module>graduacao</module>
+		<type>plugin</type>
+		<subtype>strategy</subtype>
+
+		<variationPoint>br.ufrn.sigaa.ensino.graduacao.negocio.calculos.PerfilInicial</variationPoint>
+	
+		<variants>
+			<description>Conforme resolução 227/2009</description>
+			<value>br.ufrn.sigaa.ensino.graduacao.negocio.calculos.PerfilInicialNovoRegulamento</value>
+		</variants>
+		
+		<variants>
+			<description>Anterior a resolução 227/2009</description>
+			<value>br.ufrn.sigaa.ensino.graduacao.negocio.calculos.PerfilInicialAntigoRegulamento</value>
+		</variants>
+
+	</variability>
+	
+	<variability>
+	    
+	    <id>sigaa-grad-03</id>
+		<description>Interface para regras de convocação de candidatos em processos seletivos de graduação</description>
+		<module>graduacao</module>
+		<type>plugin</type>
+		<subtype>strategy</subtype>
+
+		<variationPoint>br.ufrn.sigaa.ensino.graduacao.negocio.calculos.EstrategiaConvocacaoCandidatosVestibular</variationPoint>
+	
+		<variants>
+			<description>Regras de convocaçaõ do processo seletivo 2013</description>
+			<value>br.ufrn.sigaa.ensino.graduacao.negocio.vestibular.EstrategiaConvocacaoCandidatosVestibular2013</value>
+		</variants>
+
+	</variability>
+	
+	<variability>
+	    
+	    <id>sigaa-grad-04</id>
+		<description>Interface para obter classificação dos alunos em turmas visando o processamento</description>
+		<module>graduacao</module>
+		<type>plugin</type>
+		<subtype>factory</subtype>
+
+		<variationPoint>br.ufrn.sigaa.processamento.dao.ProcessamentoMatriculaDao</variationPoint>
+	
+		<variants>
+			<description>Ranking do EAD</description>
+			<value>br.ufrn.sigaa.processamento.dao.ProcessamentoMatriculaEadDao</value>
+		</variants>
+		
+		<variants>
+			<description>Ranking do processamento de graduação presencial</description>
+			<value>br.ufrn.sigaa.processamento.dao.ProcessamentoMatriculaGraduacaoDao</value>
+		</variants>
+		
+		<variants>
+			<description>Ranking do processamento turmas de férias</description>
+			<value>br.ufrn.sigaa.processamento.dao.ProcessamentoMatriculaGraduacaoFeriasDao</value>
+		</variants>
+		
+		<variants>
+			<description>Ranking do processamento da escola de música</description>
+			<value>br.ufrn.sigaa.processamento.dao.ProcessamentoMatriculaMusicaDao</value>
+		</variants>
+
+	</variability>
+	
+	
+	<variability>
+	    
+	    <id>sigaa-proj-01</id>
+		<description>Interface para generalizaçaõ do comportamento dos calculos de pesquisa</description>
+		<module>pesquisa</module>
+		<type>plugin</type>
+		<subtype>strategy</subtype>
+
+		<variationPoint>br.ufrn.sigaa.pesquisa.negocio.CalculosPesquisa</variationPoint>
+	
+		<variants>
+			<description>Implementação dos calculos conforme editais da UFRN</description>
+			<value>br.ufrn.sigaa.pesquisa.negocio.CalculosPesquisaImplUFRN</value>
+		</variants>
+
+	</variability>
+	
+	
+	
+	<variability>
+	    
+	    <id>sigaa-proj-02</id>
+		<description>Estratégia para avaliação de projetos acadêmicos (ensino, pesquisa e extensão)</description>
+		<module>projetos</module>
+		<type>plugin</type>
+		<subtype>strategy</subtype>
+
+		<variationPoint>br.ufrn.sigaa.projetos.negocio.EstrategiaAvaliacaoProjetos</variationPoint>
+	
+		<variants>
+			<description></description>
+			<value>AvaliacaoProjetoApoio</value>
+		</variants>
+
+	</variability>
+	
+	<variability>
+	    
+	    <id>sigaa-proj-03</id>
+		<description>Algoritmo padrão para distribuição de projetos</description>
+		<module>projetos</module>
+		<type>plugin</type>
+		<subtype>strategy</subtype>
+
+		<variationPoint>br.ufrn.sigaa.projetos.negocio.EstrategiaDistribuicaoProjetos</variationPoint>
+	
+		<variants>
+			<description>Implementação para projetos de apoio a pesquisas</description>
+			<value>br.ufrn.sigaa.pesquisa.negocio.AvaliacaoProjetoApoio</value>
+		</variants>
+		
+		<variants>
+			<description>Implementaçaõ para projetos associados</description>
+			<value>br.ufrn.sigaa.projetos.negocio.AvaliacaoProjetoAssociado</value>
+		</variants>
+
+	</variability>
+	
+	
+	<!--  biblioteca -->
+	<variability>
+	    
+	    <id>sigaa-bib-01</id>
+		<description>Estratégia para obter os usuários a partir dos seus vínculos no sistema e de acordo com as regras do sistema de bibliotecas da instituição</description>
+		<module>biblioteca</module>
+		<type>plugin</type>
+		<subtype>strategy</subtype>
+
+		<variationPoint>br.ufrn.sigaa.biblioteca.circulacao.negocio.ObtemVinculoUsuarioBibliotecaStrategy</variationPoint>
+	
+		<variants>
+			<description>Estratégia padrão usada pela UFRN</description>
+			<value>br.ufrn.sigaa.biblioteca.circulacao.negocio.ObtemVinculoUsuarioBibliotecaDefaultStrategy</value>
+		</variants>
+
+	</variability>
+	
+	<variability>
+	    
+	    <id>sigaa-bib-02</id>
+		<description>Interface padrão para lógica de punição de atrasos de emprestimos</description>
+		<module>biblioteca</module>
+		<type>plugin</type>
+		<subtype>strategy</subtype>
+
+		<variationPoint>br.ufrn.sigaa.biblioteca.circulacao.negocio.PunicaoAtrasoEmprestimoStrategy</variationPoint>
+	
+		<variants>
+			<description>Implementaçaõ padrão de multa</description>
+			<value>br.ufrn.sigaa.biblioteca.circulacao.negocio.MultaStrategyDefault</value>
+		</variants>
+		
+		<variants>
+			<description>Implementaçaõ padrão de suspensão de usuários</description>
+			<value>br.ufrn.sigaa.biblioteca.circulacao.negocio.SuspensaoStrategyDefault</value>
+		</variants>
+
+	</variability>
+	
+	<variability>
+	    
+	    <id>sigaa-bib-03</id>
+		<description>Interface padrão para implementações de buscas textuais</description>
+		<module>biblioteca</module>
+		<type>plugin</type>
+		<subtype>factory</subtype>
+
+		<variationPoint>br.ufrn.sigaa.biblioteca.processos_tecnicos.pesquisa.dominio.GeraPesquisaTextual</variationPoint>
+	
+		<variants>
+			<description>Busca textual implementando full text engine do postgresql</description>
+			<value>br.ufrn.sigaa.biblioteca.processos_tecnicos.pesquisa.dominio.GeraPesquisaTextualPosgreSQL</value>
+		</variants>
+
+	</variability>
+
+	
+	
+	<variability>
+	    
+	    <id>sigaa-pi-01</id>
+		<description>Interface para geração de atividades ou produções intelectuais para relatórios de produções</description>
+		<module>Produçaõ intelectual</module>
+		<type>plugin</type>
+		<subtype>factory</subtype>
+
+		<variationPoint>br.ufrn.sigaa.prodocente.negocio.relatorioprodutividade.AbstractMapperAtividade</variationPoint>
+		<variationPoint>br.ufrn.sigaa.prodocente.negocio.relatorioprodutividade.AbstractMapperProducaoIntelectual</variationPoint>
+	
+		<variants>
+			<description>Diversas impementações de atividades</description>
+			<value> br.ufrn.sigaa.prodocente.negocio.relatorioprodutividade.impl.*</value>
+		</variants>
+
+	</variability>
+	
+	
+	
+	
+	<variability>
+	    
+	    <id>sigaa-ec-01</id>
+		<description>Variabilidade de Habilitação de Funcionalidades</description>
+		<module>avaliação institucional</module>
+		<type>condExecution</type>
+		
+		<variationPoint>br.ufrn.sigaa.parametros.dominio.ParametrosAvaliacaoInstitucional#AVALIACAO_DOCENTE_ATIVA</variationPoint>
+		<variationPoint>ParametrosAvaliacaoInstitucional#AVALIACAO_DOCENTE_ATIVA</variationPoint>
+	
+		<variants>
+			<description>Habilita</description>
+			<value>true</value>
+		</variants>
+		<variants>
+			<description>Desabilita</description>
+			<value>false</value>
+		</variants>
+	
+	</variability>
+	
+	<variability>
+	    
+	    <id>sigaa-ec-02</id>
+		<description>Variabilidade de Habilitação de Funcionalidades</description>
+		<module>biblioteca</module>
+		<type>condExecution</type>
+		
+		<variationPoint>br.ufrn.sigaa.parametros.dominio.ParametrosBibilioteca#SISTEMA_TRABALHA_COM_RESERVAS</variationPoint>
+		<variationPoint>ParametrosBibilioteca#SISTEMA_TRABALHA_COM_RESERVAS</variationPoint>
+	
+		<variants>
+			<description>Habilita</description>
+			<value>true</value>
+		</variants>
+		<variants>
+			<description>Desabilita</description>
+			<value>false</value>
+		</variants>
+	
+	</variability>
+	
+	<variability>
+	    
+	    <id>sigaa-ec-03</id>
+		<description>Variabilidade de Habilitação de Funcionalidades</description>
+		<module>biblioteca</module>
+		<type>condExecution</type>
+		
+		<variationPoint>br.ufrn.sigaa.parametros.dominio.ParametrosBibilioteca#SISTEMA_TRABALHA_COM_SUSPENSAO</variationPoint>
+		<variationPoint>ParametrosBibilioteca#SISTEMA_TRABALHA_COM_SUSPENSAO</variationPoint>
+	
+		<variants>
+			<description>Habilita</description>
+			<value>true</value>
+		</variants>
+		<variants>
+			<description>Desabilita</description>
+			<value>false</value>
+		</variants>
+	
+	</variability>
+	
+	<variability>
+	    
+	    <id>sigaa-ec-04</id>
+		<description>Variabilidade de Habilitação de Funcionalidades</description>
+		<module>biblioteca</module>
+		<type>condExecution</type>
+		
+		<variationPoint>br.ufrn.sigaa.parametros.dominio.ParametrosBibilioteca#SISTEMA_TRABALHA_COM_MULTA</variationPoint>
+		<variationPoint>ParametrosBibilioteca#SISTEMA_TRABALHA_COM_MULTA</variationPoint>
+	
+		<variants>
+			<description>Habilita</description>
+			<value>true</value>
+		</variants>
+		<variants>
+			<description>Desabilita</description>
+			<value>false</value>
+		</variants>
+	
+	</variability>
+	
+	<variability>
+	    
+	    <id>sigaa-ec-05</id>
+		<description>Variabilidade de Habilitação de Funcionalidades</description>
+		<module>ead</module>
+		<type>condExecution</type>
+		
+		<variationPoint>br.ufrn.sigaa.parametros.dominio.ParametrosEAD#PERMITE_TRANCAR_COMPONENTE</variationPoint>
+		<variationPoint>ParametrosEAD#PERMITE_TRANCAR_COMPONENTE</variationPoint>
+		
+		<variants>
+			<description>Habilita</description>
+			<value>true</value>
+		</variants>
+		<variants>
+			<description>Desabilita</description>
+			<value>false</value>
+		</variants>
+	
+	</variability>
+	
+	<variability>
+	    
+	    <id>sigaa-ec-06</id>
+		<description>Variabilidade de Habilitação de Funcionalidades</description>
+		<module>ead</module>
+		<type>condExecution</type>
+		
+		<variationPoint>br.ufrn.sigaa.parametros.dominio.ParametrosEAD#UTILIZAR_TUTORIA_EAD</variationPoint>
+		<variationPoint>ParametrosEAD#UTILIZAR_TUTORIA_EAD</variationPoint>
+	
+		<variants>
+			<description>Habilita</description>
+			<value>true</value>
+		</variants>
+		<variants>
+			<description>Desabilita</description>
+			<value>false</value>
+		</variants>
+	
+	</variability>
+	
+	<variability>
+	    
+	    <id>sigaa-ec-07</id>
+		<description>Variabilidade de Habilitação de Funcionalidades</description>
+		<module>graduacao</module>
+		<type>condExecution</type>
+		
+		<variationPoint>br.ufrn.sigaa.parametros.dominio.ParametrosGraduacao#ACESSO_COORDENACAO_MATRICULA_TURMA_DE_FERIAS</variationPoint>
+		<variationPoint>ParametrosGraduacao#ACESSO_COORDENACAO_MATRICULA_TURMA_DE_FERIAS</variationPoint>
+	
+		<variants>
+			<description>Habilita</description>
+			<value>true</value>
+		</variants>
+		<variants>
+			<description>Desabilita</description>
+			<value>false</value>
+		</variants>
+	
+	</variability>
+	
+	<variability>
+	    
+	    <id>sigaa-ec-08</id>
+		<description>Variabilidade de Habilitação de Funcionalidades</description>
+		<module>biblioteca</module>
+		<type>condExecution</type>
+		
+		<variationPoint>br.ufrn.sigaa.parametros.dominio.ParametrosGraduacao#ALUNO_EAD_FAZ_MATRICULA_ONLINE</variationPoint>
+		<variationPoint>ParametrosGraduacao#ALUNO_EAD_FAZ_MATRICULA_ONLINE</variationPoint>
+	
+		<variants>
+			<description>Habilita</description>
+			<value>true</value>
+		</variants>
+		<variants>
+			<description>Desabilita</description>
+			<value>false</value>
+		</variants>
+	
+	</variability>
+	
+	<variability>
+	    
+	    <id>sigaa-ec-09</id>
+		<description>Variabilidade de Habilitação de Funcionalidades</description>
+		<module>biblioteca</module>
+		<type>condExecution</type>
+		
+		<variationPoint>br.ufrn.sigaa.parametros.dominio.ParametrosLato#PERMITE_GESTOR_CADASTRAR_PROPOSTA_CURSO_LATO</variationPoint>
+		<variationPoint>ParametrosLato#PERMITE_GESTOR_CADASTRAR_PROPOSTA_CURSO_LATO</variationPoint>
+	
+		<variants>
+			<description>Habilita</description>
+			<value>true</value>
+		</variants>
+		<variants>
+			<description>Desabilita</description>
+			<value>false</value>
+		</variants>
+	
+	</variability>
+	
+	<variability>
+	    
+	    <id>sigaa-ec-10</id>
+		<description>Variabilidade de Habilitação de Funcionalidades</description>
+		<module>biblioteca</module>
+		<type>condExecution</type>
+		
+		<variationPoint>br.ufrn.sigaa.parametros.dominio.ParametrosStricto#PERMITE_COORDENACAO_CADASTRAR_ALTERAR_ATIVAR_INATIVAR_ESTRUTURA_CURRICULAR</variationPoint>
+		<variationPoint>ParametrosStricto#PERMITE_COORDENACAO_CADASTRAR_ALTERAR_ATIVAR_INATIVAR_ESTRUTURA_CURRICULAR</variationPoint>
+	
+		<variants>
+			<description>Habilita</description>
+			<value>true</value>
+		</variants>
+		<variants>
+			<description>Desabilita</description>
+			<value>false</value>
+		</variants>
+	
+	</variability>
+	
+	
+	<variability>
+	    
+	    <id>sigaa-ec-11</id>
+		<description>Variabilidade de Habilitação de Funcionalidades</description>
+		<module>biblioteca</module>
+		<type>condExecution</type>
+		
+		<variationPoint>br.ufrn.sigaa.parametros.dominio.ParametrosStricto#PERMITE_COORDENACAO_CADASTRAR_ALTERAR_COMPONENTE_CURRICULAR</variationPoint>
+		<variationPoint>ParametrosStricto#PERMITE_COORDENACAO_CADASTRAR_ALTERAR_COMPONENTE_CURRICULAR</variationPoint>
+	
+		<variants>
+			<description>Habilita</description>
+			<value>true</value>
+		</variants>
+		<variants>
+			<description>Desabilita</description>
+			<value>false</value>
+		</variants>
+	
+	</variability>
+	
+</variabilities>

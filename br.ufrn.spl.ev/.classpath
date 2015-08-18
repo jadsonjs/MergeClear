@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="lib" path="LIBS/changedistiller-0.0.1-with-dependencies.jar"/>
+	<classpathentry exported="true" kind="lib" path="LIBS/antlr-runtime-3.1.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="LIBS/commons-logging-1.1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="LIBS/httpclient-4.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="LIBS/slf4j-api-1.6.4.jar"/>
+	<classpathentry exported="true" kind="lib" path="LIBS/json-20090211.jar"/>
+	<classpathentry exported="true" kind="lib" path="LIBS/httpcore-4.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="LIBS/redmine-java-api-1.17.jar"/>
+	<classpathentry exported="true" kind="lib" path="LIBS/sqljet-1.1.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="LIBS/commons-collections-2.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="LIBS/svn-javahl-api-1.7.6.jar"/>
+	<classpathentry exported="true" kind="lib" path="LIBS/svnkit-1.7.6.jar"/>
+	<classpathentry exported="true" kind="lib" path="LIBS/svnkit-cli-1.7.6-SNAPSHOT.jar"/>
+	<classpathentry exported="true" kind="lib" path="LIBS/svnkit-javahl16-1.7.6.jar"/>
+	<classpathentry exported="true" kind="lib" path="LIBS/svnkit-osgi-1.7.6.jar"/>
+	<classpathentry exported="true" kind="lib" path="LIBS/xpp3-1.1.4c.jar"/>
+	<classpathentry exported="true" kind="lib" path="LIBS/xstream-1.4.3.jar"/>
+	<classpathentry kind="lib" path="LIBS/jackson-core-asl-1.9.10.jar"/>
+	<classpathentry kind="lib" path="LIBS/jackson-jaxrs-1.9.10.jar"/>
+	<classpathentry kind="lib" path="LIBS/jackson-mapper-asl-1.9.10.jar"/>
+	<classpathentry kind="lib" path="LIBS/jackson-xc-1.9.10.jar"/>
+	<classpathentry kind="lib" path="LIBS/javaparser-1.0.8.jar"/>
+	<classpathentry kind="lib" path="LIBS/jersey-bundle-1.17.1.jar"/>
+	<classpathentry kind="lib" path="LIBS/jsr311-api-1.1.jar"/>
+	<classpathentry kind="lib" path="LIBS/j2bugzilla-2.1.1.jar"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="src_test"/>
+	<classpathentry kind="src" path="examples"/>
+	<classpathentry kind="lib" path="LIBS/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="LIBS/gson-2.2.4.jar"/>
+	<classpathentry kind="lib" path="LIBS/jsch-0.1.51.jar"/>
+	<classpathentry kind="lib" path="LIBS/org.eclipse.egit.github.core-2.1.5.jar" sourcepath="/Users/jadson/.m2/repository/org/eclipse/mylyn/github/org.eclipse.egit.github.core/2.1.5/org.eclipse.egit.github.core-2.1.5-sources.jar"/>
+	<classpathentry kind="lib" path="LIBS/org.eclipse.jgit-3.3.2.201404171909-r.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,16 @@
+# File with files that does not need be part of the control of version with GIT
+
+#the file for mac os
+.DS_Store
+
+#the file with security information i want not commit
+connections.properties
+config.properties
+
+#All .class files
+*.class
+
+#All files in the output folder
+/bin/**/*
+
+/bin/

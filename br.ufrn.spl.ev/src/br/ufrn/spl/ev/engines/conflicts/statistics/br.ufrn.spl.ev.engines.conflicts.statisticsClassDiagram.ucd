@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="br.ufrn.spl.ev.engines.conflicts.statisticsClassDiagram" id="{UMLID=_vvNfgIJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics}" metadata="uml2-1.0" initialized="true" tag="10" key="32303037303632392062722E7566726E2E73706C2E6576">
+  <children xsi:type="editmodel:ClassEditModel" name="AtomicEvolution" location="480,50" size="184,839" timstampe="605777" stereotype="" id="{UMLID=_wCK3wIJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/AtomicEvolution}" runTimeClassModel="getColumns(),getDeltaType(),taskType,variability,setSignature(),getVariability(),version,getDescription(),description,deltaType,setChangeLogInformation(Lbr.ufrn.spl.ev.models.changeloghistorymodel.ChangeLog;),getVersion(),setIndirectConflict(I),getSignature(),indirectConflict,setTaskNumber(),textualConflict,getLayerStatInformation(Lbr.ufrn.spl.ev.models.changeloghistorymodel.AssetChangeLog;),getTextualConflict(),setDeltaType(),setVariability(),signature,setTextualConflict(I),setLayer(),depthLevel,getCSV(),setDirectConflict(I),setDescription(),setAssetInformation(Lbr.ufrn.spl.ev.models.changeloghistorymodel.AssetChangeLog;),setTaskType(),layer,AtomicEvolution(Lbr.ufrn.spl.ev.models.changeloghistorymodel.MethodChangeLog;),AtomicEvolution(Lbr.ufrn.spl.ev.models.changeloghistorymodel.ClassChangeLog;),getDepthLevel(),AtomicEvolution(Lbr.ufrn.spl.ev.models.changeloghistorymodel.FieldChangeLog;),setVersion(),setDepthLevel(I),getLayer(),directConflict,getTaskType(),taskNumber,getIndirectConflict(),getDirectConflict(),getTaskNumber()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="100,216">
+      <children xsi:type="editmodel:AttributeEditModel" name="taskNumber" size="86,16" id="{UMLID=_wE5boYJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="version" size="65,16" id="{UMLID=_wFB-gIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="taskType" size="72,16" id="{UMLID=_wEvqoIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="description" size="82,16" id="{UMLID=_wElSkIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="directConflict" size="92,16" id="{UMLID=_wEucgIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="indirectConflict" size="100,16" id="{UMLID=_wE4NgIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="depthLevel" size="82,16" id="{UMLID=_wEfzAIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="textualConflict" size="97,16" id="{UMLID=_wE40kYJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="deltaType" size="75,16" id="{UMLID=_wEgaEYJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="signature" size="74,16" id="{UMLID=_wE9tEIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="variability" size="74,16" id="{UMLID=_wEqLEIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="layer" size="53,16" id="{UMLID=_wEz8EIJCEeOSnasWRemx6Q}"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="163,576">
+      <children xsi:type="editmodel:MethodEditModel" name="AtomicEvolution" size="115,16" id="{UMLID=_wGCrIIJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/AtomicEvolution#AtomicEvolution(Lbr.ufrn.spl.ev.models.changeloghistorymodel.ClassChangeLog;)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="AtomicEvolution" size="115,16" id="{UMLID=_wGuAkIJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/AtomicEvolution#AtomicEvolution(Lbr.ufrn.spl.ev.models.changeloghistorymodel.FieldChangeLog;)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="AtomicEvolution" size="115,16" id="{UMLID=_wGNqQIJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/AtomicEvolution#AtomicEvolution(Lbr.ufrn.spl.ev.models.changeloghistorymodel.MethodChangeLog;)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setChangeLogInformation" size="163,16" id="{UMLID=_wF6vUIJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/AtomicEvolution#setChangeLogInformation(Lbr.ufrn.spl.ev.models.changeloghistorymodel.ChangeLog;)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setAssetInformation" size="137,16" id="{UMLID=_wGGVgYJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/AtomicEvolution#setAssetInformation(Lbr.ufrn.spl.ev.models.changeloghistorymodel.AssetChangeLog;)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getColumns" size="96,16" id="{UMLID=_wFw-UIJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/AtomicEvolution#getColumns()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getCSV" size="77,16" id="{UMLID=_wFVggIJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/AtomicEvolution#getCSV()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLayerStatInformation" size="155,16" id="{UMLID=_wGU_AIJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/AtomicEvolution#getLayerStatInformation(Lbr.ufrn.spl.ev.models.changeloghistorymodel.AssetChangeLog;)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getTaskNumber" size="114,16" id="{UMLID=_wGpIEIJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/AtomicEvolution#getTaskNumber()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setTaskNumber" size="114,16" id="{UMLID=_wG7b8IJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/AtomicEvolution#setTaskNumber()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getVersion" size="92,16" id="{UMLID=_wFeqcIJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/AtomicEvolution#getVersion()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setVersion" size="92,16" id="{UMLID=_wHO98YJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/AtomicEvolution#setVersion()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getTaskType" size="100,16" id="{UMLID=_wFss4IJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/AtomicEvolution#getTaskType()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setTaskType" size="100,16" id="{UMLID=_wGy5EIJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/AtomicEvolution#setTaskType()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDescription" size="109,16" id="{UMLID=_wGkPkYJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/AtomicEvolution#getDescription()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setDescription" size="109,16" id="{UMLID=_wHYu8oJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/AtomicEvolution#setDescription()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDirectConflict" size="119,16" id="{UMLID=_wHYH4IJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/AtomicEvolution#getDirectConflict()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setDirectConflict" size="119,16" id="{UMLID=_wFiU0IJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/AtomicEvolution#setDirectConflict(I)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getIndirectConflict" size="126,16" id="{UMLID=_wHjHAYJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/AtomicEvolution#getIndirectConflict()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setIndirectConflict" size="126,16" id="{UMLID=_wGjBcIJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/AtomicEvolution#setIndirectConflict(I)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getTextualConflict" size="125,16" id="{UMLID=_wHh44IJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/AtomicEvolution#getTextualConflict()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setTextualConflict" size="125,16" id="{UMLID=_wHEl4YJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/AtomicEvolution#setTextualConflict(I)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDeltaType" size="102,16" id="{UMLID=_wF-ZsYJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/AtomicEvolution#getDeltaType()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setDeltaType" size="102,16" id="{UMLID=_wFji8YJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/AtomicEvolution#setDeltaType()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSignature" size="101,16" id="{UMLID=_wGQtk4JCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/AtomicEvolution#getSignature()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setSignature" size="101,16" id="{UMLID=_wHF0AYJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/AtomicEvolution#setSignature()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getVariability" size="101,16" id="{UMLID=_wF2d4YJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/AtomicEvolution#getVariability()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setVariability" size="101,16" id="{UMLID=_wGZ3gIJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/AtomicEvolution#setVariability()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLayer" size="83,16" id="{UMLID=_wFZx8IJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/AtomicEvolution#getLayer()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setLayer" size="83,16" id="{UMLID=_wFMWkIJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/AtomicEvolution#setLayer()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDepthLevel" size="109,16" id="{UMLID=_wF1PwIJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/AtomicEvolution#getDepthLevel()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setDepthLevel" size="109,16" id="{UMLID=_wGxq8YJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/AtomicEvolution#setDepthLevel(I)}"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showMethods="true" showAttributes="true" showLiterals="true" ShowInnerEntity="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" name="CollectStatistics" location="455,1624" size="173,97" timstampe="8914" id="{UMLID=_xTUWkIJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/CollectStatistics}" runTimeClassModel="collectStatistics(Lbr.ufrn.spl.ev.models.changeloghistorymodel.ChangeLogHistory;Lbr.ufrn.spl.ev.models.changeloghistorymodel.ChangeLogHistory;),saveStatisticsCollected()">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="152,36">
+      <children xsi:type="editmodel:MethodEditModel" name="collectStatistics" size="115,16" id="{UMLID=_xTWLwIJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/CollectStatistics#collectStatistics(Lbr.ufrn.spl.ev.models.changeloghistorymodel.ChangeLogHistory;Lbr.ufrn.spl.ev.models.changeloghistorymodel.ChangeLogHistory;)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="saveStatisticsCollected" size="152,16" id="{UMLID=_xTYoAIJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/CollectStatistics#saveStatisticsCollected()}"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showMethods="true" showAttributes="true" showLiterals="true" ShowInnerEntity="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="CollectSimpleStatisticInformation" location="50,50" size="380,1829" timstampe="19353" stereotype="" id="{UMLID=_xTgj0IJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/CollectSimpleStatisticInformation}" runTimeClassModel="TEXTUAL_CONFLICTING_VARIABILITY_CONDITIONAL_EXEC,INDIRECT_CONFLICTING_ATOMIC_FIELD_REMOVED,INDIRECT_CONFLICTING_ATOMIC_METHOD_ADDED,init(),tableTaskSource,TEXTUAL_CONFLICTING_ATOMIC_CLASS_UPDATED,INDIRECT_CONFLICTING_ATOMIC_METHOD_REMOVED,DIRECT_CONFLICTING_TOTAL_EVOLUTIONS_TASK,EVOLUTIONS_TASK_NEW_USE_CASE,CollectSimpleStatisticInformation(),collectStatistics(I),INDIRECT_CONFLICTING_TOTAL_EVOLUTIONS_TASK_VARIABILITY,EVOLUTIONS_ATOMIC_UPDATED_CLASS,TEXTUAL_CONFLICTING_LAYER_OTHERS,DIRECT_CONFLICTING_ATOMIC_CLASS_REMOVED,EVOLUTIONS_ATOMIC_FIELD_REMOVED,TEXTUAL_CONFLICTING_VARIABILITY_PATTERN,DIRECT_CONFLICTING_TASK_NEW_USE_CASE,statisticTarget,EVOLUTIONS_TOTAL_ATOMIC,INDIRECT_CONFLICTING_ATOMIC_METHOD_UPDATED,getLayerStatInformation(),EVOLUTIONS_TOTAL_TASK_VARIABIITY_CONDEXEC,DIRECT_CONFLICTING_ATOMIC_FIELD_ADDED,TEXTUAL_CONFLICTING_TASK_BUG_FIX,INDIRECT_CONFLICTING_ATOMIC_CLASS_ADDED,createEvolutionTable(),TEXTUAL_CONFLICTING_TASK_NEW_USE_CASE,DIRECT_CONFLICTING_TASK_BUG_FIX,DIRECT_CONFLICTING_ATOMIC_CLASS_UPDATED,INDIRECT_CONFLICTING_ATOMIC_CLASS_UPDATED,EVOLUTIONS_ATOMIC_METHOD_UPDATED,collectGlobalStatisics(),tableTarget,statisticSource,EVOLUTIONS_TOTAL_TASK_VARIABIITY_PATTERN,analizeLPS(),DIRECT_CONFLICTING_TOTAL_EVOLUTIONS_ATOMIC,INDIRECT_CONFLICTING_LAYER_ENTITY,DIRECT_CONFLICTING_ATOMIC_FIELD_REMOVED,INDIRECT_CONFLICTING_VARIABILITY_CONDITIONAL_EXEC,initStatistics(),TEXTUAL_CONFLICTING_TASK_NEW_FUNCIONALITY,INDIRECT_CONFLICTING_LAYER_BUSINESS,INDIRECT_CONFLICTING_TOTAL_EVOLUTIONS_ATOMIC,EVOLUTIONS_ATOMIC_CLASS_ADDED,EVOLUTIONS_TOTAL_TASK_NO_CONFLICT,EVOLUTIONS_ATOMIC_METHOD_REMOVED,EVOLUTIONS_ATOMIC_FIELD_UPDATED,collectStatistics(),tableSource,DIRECT_CONFLICTING_TOTAL_EVOLUTIONS_TASK_VARIABILITY,DIRECT_CONFLICTING_LAYER_ENTITY,EVOLUTIONS_TOTAL_TASK_VARIABIITY_CONFLICT,DIRECT_CONFLICTING_TASK_NEW_FUNCIONALITY,INDIRECT_CONFLICTING_ATOMIC_FIELD_ADDED,TEXTUAL_CONFLICTING_TOTAL_EVOLUTIONS_TASK,DIRECT_CONFLICTING_ATOMIC_METHOD_ADDED,DIRECT_CONFLICTING_ATOMIC_FIELD_UPDATED,EVOLUTIONS_ATOMIC_METHOD_ADDED,INDIRECT_CONFLICTING_ATOMIC_CLASS_REMOVED,DIRECT_CONFLICTING_ATOMIC_METHOD_UPDATED,INDIRECT_CONFLICTING_ATOMIC_FIELD_UPDATED,INDIRECT_CONFLICTING_TASK_BUG_FIX,TOTAL_EVOLUTIONS_VARIABILITY_PATTERN,DIRECT_CONFLICTING_ATOMIC_CLASS_ADDED,DIRECT_CONFLICTING_LAYER_OTHERS,EVOLUTIONS_TOTAL_TASK,TEXTUAL_CONFLICTING_TOTAL_EVOLUTIONS_ATOMIC,DIRECT_CONFLICTING_LAYER_WEB,INDIRECT_CONFLICTING_VARIABILITY_PATTERN,TEXTUAL_CONFLICTING_LAYER_DATA_ACCESS,TEXTUAL_CONFLICTING_LAYER_ENTITY,EVOLUTIONS_ATOMIC_FIELD_ADDED,tableTaskTarget,INDIRECT_CONFLICTING_TASK_NEW_FUNCIONALITY,TEXTUAL_CONFLICTING_TOTAL_EVOLUTIONS_TASK_VARIABILITY,DIRECT_CONFLICTING_LAYER_DATA_ACCESS,INDIRECT_CONFLICTING_LAYER_WEB,EVOLUTIONS_TASK_NEW_FUNCIONALITY,EVOLUTIONS_ATOMIC_CLASS_MODIFIED,TOTAL_EVOLUTIONS_VARIABILITY_CONDITIONAL_EXEC,DIRECT_CONFLICTING_VARIABILITY_CONDITIONAL_EXEC,createEvolutionTaskTable(),saveStatisticsCollected(),EVOLUTIONS_ATOMIC_CLASS_REMOVED,EVOLUTIONS_TOTAL_TASK_CORE,DIRECT_CONFLICTING_VARIABILITY_PATTERN,statisticMode,INDIRECT_CONFLICTING_TOTAL_EVOLUTIONS_TASK,TEXTUAL_CONFLICTING_LAYER_BUSINESS,TEXTUAL_CONFLICTING_LAYER_WEB,INDIRECT_CONFLICTING_TASK_NEW_USE_CASE,INDIRECT_CONFLICTING_LAYER_DATA_ACCESS,DIRECT_CONFLICTING_ATOMIC_METHOD_REMOVED,EVOLUTIONS_TASK_BUG_FIX,DIRECT_CONFLICTING_LAYER_BUSINESS,INDIRECT_CONFLICTING_LAYER_OTHERS">
+    <children xsi:type="editmodel:CompartmentEditModel" size="359,1566">
+      <children xsi:type="editmodel:AttributeEditModel" name="EVOLUTIONS_TOTAL_TASK" size="166,16" id="{UMLID=_xjYy4IJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="EVOLUTIONS_TOTAL_TASK_NO_CONFLICT" size="242,16" id="{UMLID=_xiHnkIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="EVOLUTIONS_TOTAL_ATOMIC" size="177,16" id="{UMLID=_xgvukIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="EVOLUTIONS_TOTAL_TASK_VARIABIITY_PATTERN" size="279,16" id="{UMLID=_xhkN8IJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="EVOLUTIONS_TOTAL_TASK_VARIABIITY_CONDEXEC" size="290,16" id="{UMLID=_xg3DUIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="EVOLUTIONS_TOTAL_TASK_VARIABIITY_CONFLICT" size="284,16" id="{UMLID=_xijFYIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="EVOLUTIONS_TOTAL_TASK_CORE" size="200,16" id="{UMLID=_xkci0IJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="EVOLUTIONS_TASK_NEW_FUNCIONALITY" size="236,16" id="{UMLID=_xkMEIIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="EVOLUTIONS_TASK_BUG_FIX" size="176,16" id="{UMLID=_xk3ZkIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="EVOLUTIONS_TASK_NEW_USE_CASE" size="216,16" id="{UMLID=_xgPYQIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="EVOLUTIONS_ATOMIC_CLASS_MODIFIED" size="231,16" id="{UMLID=_xkV1IIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="EVOLUTIONS_ATOMIC_CLASS_ADDED" size="220,16" id="{UMLID=_xiEkQIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="EVOLUTIONS_ATOMIC_UPDATED_CLASS" size="231,16" id="{UMLID=_xgWF8IJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="EVOLUTIONS_ATOMIC_CLASS_REMOVED" size="235,16" id="{UMLID=_xkY4cIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="EVOLUTIONS_ATOMIC_FIELD_ADDED" size="212,16" id="{UMLID=_xjzCkIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="EVOLUTIONS_ATOMIC_FIELD_UPDATED" size="223,16" id="{UMLID=_xiQKcIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="EVOLUTIONS_ATOMIC_FIELD_REMOVED" size="227,16" id="{UMLID=_xgczoIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="EVOLUTIONS_ATOMIC_METHOD_ADDED" size="227,16" id="{UMLID=_xi2AUIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="EVOLUTIONS_ATOMIC_METHOD_UPDATED" size="238,16" id="{UMLID=_xhU9YIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="EVOLUTIONS_ATOMIC_METHOD_REMOVED" size="242,16" id="{UMLID=_xiKq4IJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="DIRECT_CONFLICTING_TOTAL_EVOLUTIONS_TASK" size="279,16" id="{UMLID=_xgMU8IJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="DIRECT_CONFLICTING_TOTAL_EVOLUTIONS_TASK_VARIABILITY" size="348,16" id="{UMLID=_xiaigIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="DIRECT_CONFLICTING_TOTAL_EVOLUTIONS_ATOMIC" size="290,16" id="{UMLID=_xhn4UIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="DIRECT_CONFLICTING_TASK_NEW_FUNCIONALITY" size="278,16" id="{UMLID=_xinW0IJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="DIRECT_CONFLICTING_TASK_BUG_FIX" size="218,16" id="{UMLID=_xhHiAIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="DIRECT_CONFLICTING_TASK_NEW_USE_CASE" size="258,16" id="{UMLID=_xgsEMIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="DIRECT_CONFLICTING_ATOMIC_CLASS_ADDED" size="262,16" id="{UMLID=_xjT6YIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="DIRECT_CONFLICTING_ATOMIC_CLASS_UPDATED" size="273,16" id="{UMLID=_xhLMYIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="DIRECT_CONFLICTING_ATOMIC_CLASS_REMOVED" size="277,16" id="{UMLID=_xgf28IJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="DIRECT_CONFLICTING_ATOMIC_FIELD_ADDED" size="254,16" id="{UMLID=_xg9xAIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="DIRECT_CONFLICTING_ATOMIC_FIELD_UPDATED" size="265,16" id="{UMLID=_xi6RwIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="DIRECT_CONFLICTING_ATOMIC_FIELD_REMOVED" size="269,16" id="{UMLID=_xhvNEIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="DIRECT_CONFLICTING_ATOMIC_METHOD_ADDED" size="269,16" id="{UMLID=_xiurkIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="DIRECT_CONFLICTING_ATOMIC_METHOD_UPDATED" size="280,16" id="{UMLID=_xi98IIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="DIRECT_CONFLICTING_ATOMIC_METHOD_REMOVED" size="284,16" id="{UMLID=_xk0WQIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="INDIRECT_CONFLICTING_TOTAL_EVOLUTIONS_TASK" size="288,16" id="{UMLID=_xkqlQIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="INDIRECT_CONFLICTING_TOTAL_EVOLUTIONS_TASK_VARIABILITY" size="357,16" id="{UMLID=_xgTCoIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="INDIRECT_CONFLICTING_TOTAL_EVOLUTIONS_ATOMIC" size="299,16" id="{UMLID=_xiAS0IJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="INDIRECT_CONFLICTING_TASK_NEW_FUNCIONALITY" size="287,16" id="{UMLID=_xkDhQIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="INDIRECT_CONFLICTING_TASK_BUG_FIX" size="227,16" id="{UMLID=_xjIUMIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="INDIRECT_CONFLICTING_TASK_NEW_USE_CASE" size="267,16" id="{UMLID=_xktokIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="INDIRECT_CONFLICTING_ATOMIC_CLASS_ADDED" size="271,16" id="{UMLID=_xhA0UIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="INDIRECT_CONFLICTING_ATOMIC_CLASS_UPDATED" size="282,16" id="{UMLID=_xhO2wIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="INDIRECT_CONFLICTING_ATOMIC_CLASS_REMOVED" size="286,16" id="{UMLID=_xjA_cIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="INDIRECT_CONFLICTING_ATOMIC_FIELD_ADDED" size="263,16" id="{UMLID=_xiy9AIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="INDIRECT_CONFLICTING_ATOMIC_FIELD_UPDATED" size="274,16" id="{UMLID=_xjL-kIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="INDIRECT_CONFLICTING_ATOMIC_FIELD_REMOVED" size="278,16" id="{UMLID=_xf4y8IJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="INDIRECT_CONFLICTING_ATOMIC_METHOD_ADDED" size="278,16" id="{UMLID=_xf8dUIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="INDIRECT_CONFLICTING_ATOMIC_METHOD_UPDATED" size="289,16" id="{UMLID=_xgyx4IJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="INDIRECT_CONFLICTING_ATOMIC_METHOD_REMOVED" size="293,16" id="{UMLID=_xgJRoIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="TEXTUAL_CONFLICTING_TOTAL_EVOLUTIONS_TASK" size="290,16" id="{UMLID=_xirBMIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="TEXTUAL_CONFLICTING_TOTAL_EVOLUTIONS_TASK_VARIABILITY" size="359,16" id="{UMLID=_xkAd8IJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="TEXTUAL_CONFLICTING_TOTAL_EVOLUTIONS_ATOMIC" size="301,16" id="{UMLID=_xjjK8IJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="DIRECT_CONFLICTING_LAYER_BUSINESS" size="232,16" id="{UMLID=_xk-HQIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="DIRECT_CONFLICTING_LAYER_DATA_ACCESS" size="257,16" id="{UMLID=_xj8zkIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="DIRECT_CONFLICTING_LAYER_WEB" size="205,16" id="{UMLID=_xjdrYIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="DIRECT_CONFLICTING_LAYER_ENTITY" size="217,16" id="{UMLID=_xifbAIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="DIRECT_CONFLICTING_LAYER_OTHERS" size="223,16" id="{UMLID=_xjQQAIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="INDIRECT_CONFLICTING_LAYER_BUSINESS" size="241,16" id="{UMLID=_xh8BYIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="INDIRECT_CONFLICTING_LAYER_DATA_ACCESS" size="266,16" id="{UMLID=_xkwr4IJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="INDIRECT_CONFLICTING_LAYER_WEB" size="214,16" id="{UMLID=_xkIZwIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="INDIRECT_CONFLICTING_LAYER_ENTITY" size="226,16" id="{UMLID=_xhrisIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="INDIRECT_CONFLICTING_LAYER_OTHERS" size="232,16" id="{UMLID=_xk7D8IJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="TEXTUAL_CONFLICTING_LAYER_BUSINESS" size="243,16" id="{UMLID=_xknh8IJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="TEXTUAL_CONFLICTING_LAYER_DATA_ACCESS" size="268,16" id="{UMLID=_xjvYMIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="TEXTUAL_CONFLICTING_LAYER_WEB" size="216,16" id="{UMLID=_xkj3kYJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="TEXTUAL_CONFLICTING_LAYER_ENTITY" size="228,16" id="{UMLID=_xjrGwIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="TEXTUAL_CONFLICTING_LAYER_OTHERS" size="234,16" id="{UMLID=_xgZwUIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="TEXTUAL_CONFLICTING_TASK_NEW_FUNCIONALITY" size="289,16" id="{UMLID=_xh4XAIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="TEXTUAL_CONFLICTING_TASK_BUG_FIX" size="229,16" id="{UMLID=_xg6GoIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="TEXTUAL_CONFLICTING_TASK_NEW_USE_CASE" size="269,16" id="{UMLID=_xhEesIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="TEXTUAL_CONFLICTING_ATOMIC_CLASS_UPDATED" size="284,16" id="{UMLID=_xgFnQIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="TOTAL_EVOLUTIONS_VARIABILITY_PATTERN" size="252,16" id="{UMLID=_xjFQ4IJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="TOTAL_EVOLUTIONS_VARIABILITY_CONDITIONAL_EXEC" size="308,16" id="{UMLID=_xkSx0IJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="DIRECT_CONFLICTING_VARIABILITY_PATTERN" size="255,16" id="{UMLID=_xkgNMIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="DIRECT_CONFLICTING_VARIABILITY_CONDITIONAL_EXEC" size="311,16" id="{UMLID=_xkPHcIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="INDIRECT_CONFLICTING_VARIABILITY_PATTERN" size="264,16" id="{UMLID=_xjm1UIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="INDIRECT_CONFLICTING_VARIABILITY_CONDITIONAL_EXEC" size="320,16" id="{UMLID=_xh0soIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="TEXTUAL_CONFLICTING_VARIABILITY_PATTERN" size="266,16" id="{UMLID=_xgjhUIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="TEXTUAL_CONFLICTING_VARIABILITY_CONDITIONAL_EXEC" size="322,16" id="{UMLID=_xf1IkIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="statisticSource" size="101,16" id="{UMLID=_xheHUIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="statisticTarget" size="96,16" id="{UMLID=_xgmkoIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="statisticMode" size="92,16" id="{UMLID=_xkjQgIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="tableSource" size="87,16" id="{UMLID=_xiT00IJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="tableTarget" size="82,16" id="{UMLID=_xhYAsIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="tableTaskSource" size="109,16" id="{UMLID=_xf_goIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="tableTaskTarget" size="104,16" id="{UMLID=_xj3UAIJCEeOSnasWRemx6Q}"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="194,216">
+      <children xsi:type="editmodel:MethodEditModel" name="collectStatistics" size="115,16" id="{UMLID=_xlhg4IJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/CollectSimpleStatisticInformation#collectStatistics()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="CollectSimpleStatisticInformation" size="194,16" id="{UMLID=_xmfxQIJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/CollectSimpleStatisticInformation#CollectSimpleStatisticInformation()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="initStatistics" size="97,16" id="{UMLID=_xld2gIJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/CollectSimpleStatisticInformation#initStatistics()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="collectGlobalStatisics" size="142,16" id="{UMLID=_xlV6sIJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/CollectSimpleStatisticInformation#collectGlobalStatisics()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="createEvolutionTaskTable" size="161,16" id="{UMLID=_xl4tQIJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/CollectSimpleStatisticInformation#createEvolutionTaskTable()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="createEvolutionTable" size="139,16" id="{UMLID=_xlBxoIJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/CollectSimpleStatisticInformation#createEvolutionTable()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="analizeLPS" size="93,16" id="{UMLID=_xlwKYIJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/CollectSimpleStatisticInformation#analizeLPS()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="saveStatisticsCollected" size="152,16" id="{UMLID=_xlOl8IJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/CollectSimpleStatisticInformation#saveStatisticsCollected()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="collectStatistics" size="115,16" id="{UMLID=_xmIk4IJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/CollectSimpleStatisticInformation#collectStatistics(I)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="init" size="53,16" id="{UMLID=_xmgYUIJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/CollectSimpleStatisticInformation#init()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLayerStatInformation" size="155,16" id="{UMLID=_xmSV4IJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/CollectSimpleStatisticInformation#getLayerStatInformation()}"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showMethods="true" showAttributes="true" showLiterals="true" ShowInnerEntity="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="CollectStatisticsFactory" location="448,1540" size="187,65" timstampe="8877" stereotype="" id="{UMLID=_yFkS4IJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/CollectStatisticsFactory}" runTimeClassModel="getStatisticsCollector()">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="141,18">
+      <children xsi:type="editmodel:MethodEditModel" name="getStatisticsCollector" size="141,16" id="{UMLID=_yFnWMIJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/CollectStatisticsFactory#getStatisticsCollector()}"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showMethods="true" showAttributes="true" showLiterals="true" ShowInnerEntity="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="TaskStatistic" location="714,50" size="187,551" timstampe="631141" stereotype="" id="{UMLID=_yFsOsIJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/TaskStatistic}" runTimeClassModel="getColumns(),taskType,version,getDescription(),isConflict(),description,getVersion(),indirectConflict,setIndirectConflict(I),textualConflict,setTaskNumber(),getTextualConflict(),setTextualConflict(I),getCSV(),setDirectConflict(I),collectConflictsInformation(Lbr.ufrn.spl.ev.models.changeloghistorymodel.ChangeLog;),setDescription(),setConflict(Z),setTaskType(),TaskStatistic(Lbr.ufrn.spl.ev.models.changeloghistorymodel.ChangeLog;),setVersion(),directConflict,conflict,getTaskType(),taskNumber,getIndirectConflict(),getDirectConflict(),getTaskNumber()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="100,144">
+      <children xsi:type="editmodel:AttributeEditModel" name="taskNumber" size="86,16" id="{UMLID=_yHFV0YJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="version" size="65,16" id="{UMLID=_yHJnQIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="taskType" size="72,16" id="{UMLID=_yG-oIYJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="description" size="82,16" id="{UMLID=_yG4hgIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="directConflict" size="92,16" id="{UMLID=_yG-BEIJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="indirectConflict" size="100,16" id="{UMLID=_yHEHsYJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="textualConflict" size="97,16" id="{UMLID=_yHEuwYJCEeOSnasWRemx6Q}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="conflict" size="64,16" id="{UMLID=_yHDgoIJCEeOSnasWRemx6Q}"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="166,360">
+      <children xsi:type="editmodel:MethodEditModel" name="TaskStatistic" size="100,16" id="{UMLID=_yHovcIJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/TaskStatistic#TaskStatistic(Lbr.ufrn.spl.ev.models.changeloghistorymodel.ChangeLog;)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="collectConflictsInformation" size="166,16" id="{UMLID=_yH7qYIJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/TaskStatistic#collectConflictsInformation(Lbr.ufrn.spl.ev.models.changeloghistorymodel.ChangeLog;)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getColumns" size="96,16" id="{UMLID=_yIV6EIJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/TaskStatistic#getColumns()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getCSV" size="77,16" id="{UMLID=_yH0VoIJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/TaskStatistic#getCSV()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getTaskNumber" size="114,16" id="{UMLID=_yHQU8oJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/TaskStatistic#getTaskNumber()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setTaskNumber" size="114,16" id="{UMLID=_yH84gIJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/TaskStatistic#setTaskNumber()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getVersion" size="92,16" id="{UMLID=_yHkeAoJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/TaskStatistic#getVersion()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setVersion" size="92,16" id="{UMLID=_yHrywYJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/TaskStatistic#setVersion()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getTaskType" size="100,16" id="{UMLID=_yIGCcIJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/TaskStatistic#getTaskType()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setTaskType" size="100,16" id="{UMLID=_yIKT4IJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/TaskStatistic#setTaskType()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDescription" size="109,16" id="{UMLID=_yHflgIJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/TaskStatistic#getDescription()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setDescription" size="109,16" id="{UMLID=_yHUmYIJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/TaskStatistic#setDescription()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDirectConflict" size="119,16" id="{UMLID=_yHeXYYJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/TaskStatistic#getDirectConflict()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setDirectConflict" size="119,16" id="{UMLID=_yHPt4IJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/TaskStatistic#setDirectConflict(I)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getIndirectConflict" size="126,16" id="{UMLID=_yIZkcIJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/TaskStatistic#getIndirectConflict()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setIndirectConflict" size="126,16" id="{UMLID=_yHj28IJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/TaskStatistic#setIndirectConflict(I)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getTextualConflict" size="125,16" id="{UMLID=_yIUr8IJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/TaskStatistic#getTextualConflict()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setTextualConflict" size="125,16" id="{UMLID=_yITd0IJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/TaskStatistic#setTextualConflict(I)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isConflict" size="84,16" id="{UMLID=_yIaykYJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/TaskStatistic#isConflict()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setConflict" size="91,16" id="{UMLID=_yHOfwIJCEeOSnasWRemx6Q,JavaID=br.ufrn.spl.ev.engines.conflicts.statistics/TaskStatistic#setConflict(Z)}"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showMethods="true" showAttributes="true" showLiterals="true" ShowInnerEntity="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=7" autoName="false"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="14,14" gridOrigin="154,168" rulerUnit="cm" gridShow="true">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" attributeSorter="Natural" methodSorter="Natural" shortPackageNameFormat="true" showClassStereotype="true" showPackageStereotype="true" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showInterfaceStereotype="true" showMethods="true" showAttributes="true" showLiterlas="true" showInnerEntity="true"/>
+</editmodel:ClassDiagramEditModel>
