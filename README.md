@@ -3,7 +3,7 @@
 ##### About:
 MergeClear is an academic tool to deal with the problem of merge system that were cloned. This tool was part of a doctoral and master degree research.
 
-![alt text](https://github.com/jadsonjs/MergeClear/blob/master/br.ufrn.spl.ev/DOCS/MergeClear.png)
+![alt text](https://github.com/jadsonjs/MergeClear/blob/master/br.ufrn.spl.ev/IMGS/MergeClear.png)
 
 ##### Version: 
 
